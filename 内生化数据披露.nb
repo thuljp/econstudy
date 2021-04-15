@@ -1,0 +1,2612 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[    120145,       2604]
+NotebookOptionsPosition[    117402,       2565]
+NotebookOutlinePosition[    117741,       2580]
+CellTagsIndexPosition[    117698,       2577]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Clear", "[", "\"\<`*\>\"", "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"\[Lambda]", "=", "1"}], ";"}], "\[IndentingNewLine]", 
+  RowBox[{
+  "(*", "\:5e73\:53f0\:7b2c\:4e00\:671f\:4f4e\:5b9a\:4ef7", 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"ns1", "=", 
+   RowBox[{
+    RowBox[{
+     FractionBox[
+      RowBox[{
+       RowBox[{"-", "\[Alpha]"}], "\[Times]", "\[Theta]"}], 
+      RowBox[{"1", "-", 
+       RowBox[{"\[Alpha]", "\[Times]", "\[Beta]", "\[Times]", "\[Theta]"}]}]],
+      "\[Times]", "pb1"}], "-", 
+    RowBox[{
+     FractionBox["1", 
+      RowBox[{"1", "-", 
+       RowBox[{"\[Alpha]", "\[Times]", "\[Beta]", "\[Times]", "\[Theta]"}]}]],
+      "\[Times]", "ps1"}], "+", 
+    FractionBox[
+     RowBox[{"1", "+", 
+      RowBox[{"\[Alpha]", "\[Times]", 
+       RowBox[{"(", 
+        RowBox[{"1", "-", "\[Theta]"}], ")"}]}], "+", 
+      RowBox[{"\[Alpha]", "\[Times]", "\[Theta]", "\[Times]", "b"}]}], 
+     RowBox[{"1", "-", 
+      RowBox[{
+      "\[Alpha]", "\[Times]", "\[Beta]", "\[Times]", "\[Theta]"}]}]]}]}], 
+  ";"}]}], "Input",
+ CellChangeTimes->{{3.82727318624419*^9, 3.8272732396610465`*^9}, {
+  3.827273337886422*^9, 3.827273426180876*^9}, {3.827463267508526*^9, 
+  3.8274632907050467`*^9}, {3.827463498937378*^9, 
+  3.827463508362781*^9}},ExpressionUUID->"eea68b5d-5a2d-41ce-8559-\
+9ce0b378cf88"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"nb1", "=", 
+   RowBox[{
+    RowBox[{
+     FractionBox[
+      RowBox[{"-", "\[Theta]"}], 
+      RowBox[{"1", "-", 
+       RowBox[{"\[Alpha]", "\[Times]", "\[Beta]", "\[Times]", "\[Theta]"}]}]],
+      "\[Times]", "pb1"}], "-", 
+    RowBox[{
+     FractionBox["\[Beta]", 
+      RowBox[{"1", "-", 
+       RowBox[{"\[Alpha]", "\[Times]", "\[Beta]", "\[Times]", "\[Theta]"}]}]],
+      "\[Times]", "ps1"}], "+", 
+    RowBox[{"(", 
+     RowBox[{"1", "-", "\[Theta]"}], ")"}], "+", 
+    RowBox[{"\[Theta]", "\[Times]", "b"}], "+", 
+    RowBox[{"\[Theta]", "\[Times]", "\[Beta]", "\[Times]", 
+     FractionBox[
+      RowBox[{"1", "+", 
+       RowBox[{"\[Alpha]", "\[Times]", 
+        RowBox[{"(", 
+         RowBox[{"1", "-", "\[Theta]"}], ")"}]}], "+", 
+       RowBox[{"\[Alpha]", "\[Times]", "\[Theta]", "\[Times]", "b"}]}], 
+      RowBox[{"1", "-", 
+       RowBox[{
+       "\[Alpha]", "\[Times]", "\[Beta]", "\[Times]", "\[Theta]"}]}]]}]}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.8272734567137203`*^9, 3.8272735060288715`*^9}, 
+   3.827463292129922*^9},ExpressionUUID->"18e345db-23e3-4d35-8844-\
+d80387675e30"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ns2", "=", 
+   RowBox[{"1", "+", 
+    RowBox[{"\[Alpha]", "\[Times]", 
+     RowBox[{"(", 
+      RowBox[{"\[Theta]", "+", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"1", "-", "\[Theta]"}], ")"}], "\[Times]", "\[Lambda]", 
+        "\[Times]", "nb1"}]}], ")"}]}], "-", "ps2"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.8272735291366944`*^9, 3.827273548637279*^9}, {
+   3.827273594383675*^9, 3.827273663945975*^9}, 
+   3.8274632933450127`*^9},ExpressionUUID->"7441e592-f153-44a0-99f9-\
+0f4e5cb621c5"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"pb2h", "=", 
+   RowBox[{"b", "+", 
+    RowBox[{"\[Beta]", "\[Times]", "ns2"}]}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.8272736901054106`*^9, 3.827273714586046*^9}, 
+   3.8274632940501347`*^9},ExpressionUUID->"7b1d4959-c55c-4561-8fd5-\
+7d37c2f9a280"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"pb2l", "=", 
+   RowBox[{"c", "+", 
+    RowBox[{"\[Beta]", "\[Times]", "ns2"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+   "\:6c42\:89e3\:5e73\:53f0\:8de8\:671f\:6700\:4f18\:5316", "\:ff0c", 
+    "FOC\:6761\:4ef6"}], "*)"}]}]}], "Input",
+ CellChangeTimes->{{3.8272737348889494`*^9, 3.8272737664958696`*^9}, 
+   3.827463294576867*^9, {3.8274633923340273`*^9, 
+   3.827463418109474*^9}},ExpressionUUID->"4a32ea13-b9e0-4c00-ac5a-\
+343d011a923f"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"\[Pi]1", "=", 
+   RowBox[{
+    RowBox[{"ps1", "\[Times]", "ns1"}], "+", 
+    RowBox[{"pb1", "\[Times]", "nb1"}], "+", 
+    RowBox[{"ps2", "\[Times]", "ns2"}], "+", 
+    RowBox[{
+    "pb2h", "\[Times]", "\[Lambda]", "\[Times]", "\[Theta]", "\[Times]", 
+     "nb1"}], "+", 
+    RowBox[{"pb2l", "\[Times]", 
+     RowBox[{"(", 
+      RowBox[{"\[Theta]", "+", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"1", "-", 
+          RowBox[{"2", "\[Times]", "\[Theta]"}]}], ")"}], "\[Times]", 
+        "\[Lambda]", "\[Times]", "nb1"}]}], ")"}]}]}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.827273812229061*^9, 3.8272738465688696`*^9}, {
+   3.8272739124023905`*^9, 3.82727402674157*^9}, {3.827274347622388*^9, 
+   3.827274417307667*^9}, {3.827275804717111*^9, 3.827275820824129*^9}, 
+   3.8274632954899197`*^9},ExpressionUUID->"6b5815e7-33de-42de-bf33-\
+934417870559"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"d\[Pi]1dps1", "=", 
+   RowBox[{"Simplify", "[", 
+    RowBox[{"D", "[", 
+     RowBox[{"\[Pi]1", ",", "ps1"}], "]"}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{3.827275862428392*^9, 
+  3.8274632964898243`*^9},ExpressionUUID->"d307a000-c1d8-46f2-9a17-\
+c8e33ef50231"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"d\[Pi]1dpb1", "=", 
+   RowBox[{"Simplify", "[", 
+    RowBox[{"D", "[", 
+     RowBox[{"\[Pi]1", ",", "pb1"}], "]"}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{3.827275876819788*^9, 
+  3.8274632971138077`*^9},ExpressionUUID->"6379c2af-06a7-427f-9b17-\
+121d9dac66ae"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"d\[Pi]1dps2", "=", 
+   RowBox[{"Simplify", "[", 
+    RowBox[{"D", "[", 
+     RowBox[{"\[Pi]1", ",", "ps2"}], "]"}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{
+  3.827463297512415*^9},ExpressionUUID->"f4cb763f-bea7-4ef2-8043-\
+b3607eddbe69"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Simplify", "[", 
+   RowBox[{"Solve", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"d\[Pi]1dps1", "\[Equal]", "0"}], " ", "&&", " ", 
+      RowBox[{"d\[Pi]1dpb1", "\[Equal]", "0"}], " ", "&&", " ", 
+      RowBox[{"d\[Pi]1dps2", "\[Equal]", "0"}]}], ",", 
+     RowBox[{"{", 
+      RowBox[{"ps1", ",", "pb1", ",", "ps2"}], "}"}]}], "]"}], "]"}], 
+  ";"}]], "Input",
+ CellChangeTimes->{
+  3.827463298657956*^9},ExpressionUUID->"e5c42464-3826-4447-9048-\
+8ce3591cbe65"],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{
+  "\:6b64\:5904\:9700\:91cd\:65b0\:8f93\:5165ps1", ",", "pb1", ",", "ps2"}], 
+  "*)"}]], "Input",
+ CellChangeTimes->{{3.827276306764567*^9, 3.827276310947442*^9}, 
+   3.827463358943276*^9, {3.827463420805973*^9, 
+   3.82746344897822*^9}},ExpressionUUID->"97243a23-709a-400b-b0ef-\
+b24756292a38"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Simplify", "[", "\[Pi]1", "]"}], ";"}]], "Input",
+ CellChangeTimes->{{3.827283584144417*^9, 3.827283593680788*^9}, 
+   3.827283772174315*^9, {3.827463486058967*^9, 
+   3.827463489369258*^9}},ExpressionUUID->"2a35fc5b-d3d6-4fe5-873c-\
+0b31179484fe"],
+
+Cell[BoxData[
+ RowBox[{"(*", "\:5e73\:53f0\:7b2c\:4e00\:671f\:9ad8\:5b9a\:4ef7", 
+  "*)"}]], "Input",
+ CellChangeTimes->{{3.827463529624908*^9, 
+  3.82746354068927*^9}},ExpressionUUID->"fbd0cbbe-4062-4d36-8324-\
+f449d491b3d2"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ns12", "=", 
+   RowBox[{
+    RowBox[{
+     FractionBox[
+      RowBox[{
+       RowBox[{"-", "\[Alpha]"}], "\[Times]", "\[Theta]"}], 
+      RowBox[{"1", "-", 
+       RowBox[{"\[Alpha]", "\[Times]", "\[Beta]", "\[Times]", "\[Theta]"}]}]],
+      "\[Times]", "pb12"}], "-", 
+    RowBox[{
+     FractionBox["1", 
+      RowBox[{"1", "-", 
+       RowBox[{"\[Alpha]", "\[Times]", "\[Beta]", "\[Times]", "\[Theta]"}]}]],
+      "\[Times]", "ps12"}], "+", 
+    FractionBox[
+     RowBox[{"1", "+", 
+      RowBox[{"\[Alpha]", "\[Times]", "\[Theta]", "\[Times]", "b"}]}], 
+     RowBox[{"1", "-", 
+      RowBox[{
+      "\[Alpha]", "\[Times]", "\[Beta]", "\[Times]", "\[Theta]"}]}]]}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.8272819051288843`*^9, 3.8272819186364717`*^9}, {
+   3.8272819858649893`*^9, 3.82728198777988*^9}, {3.827282579599452*^9, 
+   3.827282745175086*^9}, {3.827282782809926*^9, 3.82728279571115*^9}, {
+   3.827282937691413*^9, 3.827282967748879*^9}, 3.827283660452456*^9, {
+   3.827463546010084*^9, 
+   3.827463551504436*^9}},ExpressionUUID->"e357d4c5-f1de-42f0-9691-\
+aedcc9ef739c"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"nb12", "=", 
+   RowBox[{"\[Theta]", 
+    RowBox[{"(", 
+     RowBox[{"b", "+", 
+      RowBox[{"\[Beta]", "*", "ns12"}], "-", "pb12"}], ")"}]}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.827282973572308*^9, 3.827283000845736*^9}, 
+   3.827463553800187*^9},ExpressionUUID->"e5f49825-0016-4488-8840-\
+08b625562984"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ns22", "=", 
+   RowBox[{"1", "+", 
+    RowBox[{"\[Alpha]", "\[Times]", 
+     RowBox[{"(", 
+      RowBox[{"\[Theta]", "+", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"1", "-", "\[Theta]"}], ")"}], "\[Times]", "\[Lambda]", 
+        "\[Times]", "nb12"}]}], ")"}]}], "-", "ps22"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.827283033207282*^9, 3.827283082543911*^9}, 
+   3.827463554767761*^9},ExpressionUUID->"bb0a1ab8-7b30-4cee-b86d-\
+6703665a1ed0"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"pb2h2", "=", 
+   RowBox[{"b", "+", 
+    RowBox[{"\[Beta]", "\[Times]", "ns22"}]}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.8272831110400867`*^9, 3.827283113664461*^9}, 
+   3.827463555487361*^9},ExpressionUUID->"f619c693-4863-42eb-8aa6-\
+402754928a06"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"pb2l2", "=", 
+   RowBox[{"c", "+", 
+    RowBox[{"\[Beta]", "\[Times]", "ns22"}]}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.827283117128852*^9, 3.827283130200766*^9}, 
+   3.827463555847736*^9},ExpressionUUID->"4f2841c5-a01d-4e23-b402-\
+70995aa1ee9d"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"\[Pi]2", "=", 
+   RowBox[{
+    RowBox[{"ps12", "\[Times]", "ns12"}], "+", 
+    RowBox[{"pb12", "\[Times]", "nb12"}], "+", 
+    RowBox[{"ps22", "\[Times]", "ns22"}], "+", 
+    RowBox[{
+    "pb2h2", "\[Times]", "\[Lambda]", "\[Times]", "\[Theta]", "\[Times]", 
+     "nb12"}], "+", 
+    RowBox[{"pb2l2", "\[Times]", 
+     RowBox[{"(", 
+      RowBox[{"\[Theta]", "+", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"1", "-", 
+          RowBox[{"2", "\[Times]", "\[Theta]"}]}], ")"}], "\[Times]", 
+        "\[Lambda]", "\[Times]", "nb12"}]}], ")"}]}]}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.8272831357615356`*^9, 3.827283169881666*^9}, 
+   3.827463557288287*^9},ExpressionUUID->"8c62787e-f973-40d4-8c7a-\
+edcf281976d4"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"d\[Pi]2dps12", "=", 
+   RowBox[{"Simplify", "[", 
+    RowBox[{"D", "[", 
+     RowBox[{"\[Pi]2", ",", "ps12"}], "]"}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.827283217780241*^9, 3.827283228436989*^9}, 
+   3.827463565000005*^9},ExpressionUUID->"d45c9629-0d87-4fd9-9b42-\
+b28e4f9a572d"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"d\[Pi]2dpb12", "=", 
+   RowBox[{"Simplify", "[", 
+    RowBox[{"D", "[", 
+     RowBox[{"\[Pi]2", ",", "pb12"}], "]"}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.827283235468873*^9, 3.827283247971363*^9}, 
+   3.827463565550151*^9},ExpressionUUID->"5f63d4dd-d859-4e9c-90be-\
+5c1cf56b91be"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"d\[Pi]2dps22", "=", 
+   RowBox[{"Simplify", "[", 
+    RowBox[{"D", "[", 
+     RowBox[{"\[Pi]2", ",", "ps22"}], "]"}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.827283257228166*^9, 3.827283262035717*^9}, 
+   3.8274635660313587`*^9},ExpressionUUID->"1ae716b2-781b-46b8-b0bd-\
+471453f01444"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Simplify", "[", 
+   RowBox[{"Solve", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"d\[Pi]2dps12", "\[Equal]", "0"}], " ", "&&", " ", 
+      RowBox[{"d\[Pi]2dpb12", "\[Equal]", "0"}], " ", "&&", " ", 
+      RowBox[{"d\[Pi]2dps22", "\[Equal]", "0"}]}], ",", 
+     RowBox[{"{", 
+      RowBox[{"ps12", ",", "pb12", ",", "ps22"}], "}"}]}], "]"}], "]"}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.827282797495253*^9, 3.8272828289127493`*^9}, 
+   3.827282919571809*^9, {3.827283289168594*^9, 3.8272833038384*^9}, 
+   3.827463567519429*^9},ExpressionUUID->"15ed2d3d-d0e7-4e83-a2f0-\
+fdad7e686899"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Simplify", "[", "\[Pi]2", "]"}], ";"}]], "Input",
+ CellChangeTimes->{{3.8272833713311167`*^9, 3.827283377978426*^9}, 
+   3.8274635831110563`*^9},ExpressionUUID->"db4970fe-b492-4f64-859b-\
+9a4826a1d4f7"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Simplify", "[", 
+   RowBox[{"\[Pi]1", "-", "\[Pi]2"}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+  "(*", "\:56fe\:50cf\:8bf4\:660e\:7b2c\:4e00\:671f\:4f4e\:5b9a\:4ef7\:4e0e\
+\:7b2c\:4e00\:671f\:9ad8\:5b9a\:4ef7\:7684\:5229\:6da6\:5dee\:503c", 
+   "*)"}]}]}], "Input",
+ CellChangeTimes->{{3.8272833868077393`*^9, 3.8272833956321077`*^9}, {
+   3.8272835110478153`*^9, 3.8272835206292686`*^9}, 3.827463588294862*^9, {
+   3.827463678739349*^9, 
+   3.8274637326020937`*^9}},ExpressionUUID->"582e3eab-b923-473f-9d15-\
+25a305c53ca0"],
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", "1"}], "+", "\[Theta]"}], ")"}], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"-", "\[Alpha]"}], " ", 
+           SuperscriptBox["\[Beta]", "7"], " ", 
+           SuperscriptBox[
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "1"}], "+", "\[Theta]"}], ")"}], "2"], " ", 
+           SuperscriptBox["\[Theta]", "4"], " ", 
+           SuperscriptBox["\[Lambda]", "2"]}], "-", 
+          RowBox[{
+           SuperscriptBox["\[Beta]", "6"], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", "1"}], "+", "\[Theta]"}], ")"}], " ", 
+           SuperscriptBox["\[Theta]", "3"], " ", "\[Lambda]", " ", 
+           RowBox[{"(", 
+            RowBox[{"\[Lambda]", "+", 
+             RowBox[{"4", " ", 
+              SuperscriptBox["\[Alpha]", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "1"}], "+", "\[Theta]"}], ")"}], " ", "\[Theta]",
+               " ", "\[Lambda]"}], "-", 
+             RowBox[{
+              SuperscriptBox["\[Theta]", "2"], " ", "\[Lambda]"}], "+", 
+             RowBox[{"2", " ", "\[Alpha]", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "1"}], "+", 
+                RowBox[{
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"-", "1"}], "+", "\[Theta]"}], ")"}], " ", 
+                 "\[Lambda]"}]}], ")"}]}]}], ")"}]}], "+", 
+          RowBox[{"4", " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", "1"}], "+", 
+             RowBox[{
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{
+                 RowBox[{"-", "2"}], " ", "b"}], "+", 
+                RowBox[{"4", " ", "c"}], "+", "\[Alpha]", "-", 
+                SuperscriptBox["\[Alpha]", "2"]}], ")"}], " ", 
+              SuperscriptBox["\[Theta]", "2"], " ", "\[Lambda]"}], "+", 
+             RowBox[{
+              SuperscriptBox["\[Alpha]", "2"], " ", 
+              SuperscriptBox["\[Theta]", "3"], " ", "\[Lambda]"}], "-", 
+             RowBox[{"\[Theta]", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "1"}], "+", 
+                RowBox[{"2", " ", "b"}], "+", "\[Alpha]", "+", 
+                RowBox[{"2", " ", "c", " ", "\[Lambda]"}], "+", 
+                RowBox[{"\[Alpha]", " ", "\[Lambda]"}]}], ")"}]}]}], ")"}], 
+           " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", "4"}], "+", 
+             RowBox[{
+              SuperscriptBox["\[Alpha]", "2"], " ", "\[Theta]", " ", 
+              RowBox[{"(", 
+               RowBox[{"1", "+", 
+                RowBox[{
+                 SuperscriptBox[
+                  RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{"-", "1"}], "+", "\[Theta]"}], ")"}], "2"], " ", 
+                 SuperscriptBox["\[Lambda]", "2"]}]}], ")"}]}]}], ")"}]}], 
+          "+", 
+          RowBox[{
+           SuperscriptBox["\[Beta]", "5"], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", "1"}], "+", "\[Theta]"}], ")"}], " ", 
+           SuperscriptBox["\[Theta]", "2"], " ", "\[Lambda]", " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              SuperscriptBox["\[Alpha]", "3"], " ", 
+              SuperscriptBox["\[Theta]", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{"6", "-", 
+                RowBox[{"7", " ", "\[Theta]"}], "+", 
+                SuperscriptBox["\[Theta]", "2"]}], ")"}], " ", "\[Lambda]"}], 
+             "+", 
+             RowBox[{"2", " ", 
+              SuperscriptBox["\[Alpha]", "2"], " ", "\[Theta]", " ", 
+              RowBox[{"(", 
+               RowBox[{"3", "+", "\[Theta]", "+", 
+                RowBox[{"3", " ", "\[Lambda]"}], "-", 
+                RowBox[{"3", " ", "\[Theta]", " ", "\[Lambda]"}], "+", 
+                RowBox[{"\[Theta]", " ", 
+                 SuperscriptBox["\[Lambda]", "2"]}], "-", 
+                RowBox[{"2", " ", 
+                 SuperscriptBox["\[Theta]", "2"], " ", 
+                 SuperscriptBox["\[Lambda]", "2"]}], "+", 
+                RowBox[{
+                 SuperscriptBox["\[Theta]", "3"], " ", 
+                 SuperscriptBox["\[Lambda]", "2"]}]}], ")"}]}], "-", 
+             RowBox[{"2", " ", 
+              RowBox[{"(", 
+               RowBox[{"1", "+", "\[Lambda]", "+", 
+                RowBox[{
+                 SuperscriptBox["\[Theta]", "3"], " ", 
+                 SuperscriptBox["\[Lambda]", "2"]}], "-", 
+                RowBox[{
+                 SuperscriptBox["\[Theta]", "2"], " ", "\[Lambda]", " ", 
+                 RowBox[{"(", 
+                  RowBox[{"1", "+", 
+                   RowBox[{"2", " ", "\[Lambda]"}]}], ")"}]}], "+", 
+                RowBox[{"\[Theta]", " ", 
+                 RowBox[{"(", 
+                  RowBox[{"2", "+", 
+                   SuperscriptBox["\[Lambda]", "2"]}], ")"}]}]}], ")"}]}], 
+             "+", 
+             RowBox[{"\[Alpha]", " ", 
+              RowBox[{"(", 
+               RowBox[{"2", "+", 
+                RowBox[{
+                 SuperscriptBox["\[Theta]", "4"], " ", 
+                 SuperscriptBox["\[Lambda]", "3"]}], "+", 
+                RowBox[{
+                 SuperscriptBox["\[Theta]", "3"], " ", "\[Lambda]", " ", 
+                 RowBox[{"(", 
+                  RowBox[{"2", "-", 
+                   RowBox[{"4", " ", "\[Lambda]"}], "-", 
+                   RowBox[{"3", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}]}], ")"}]}], "+", 
+                RowBox[{
+                 SuperscriptBox["\[Theta]", "2"], " ", "\[Lambda]", " ", 
+                 RowBox[{"(", 
+                  RowBox[{"3", "+", 
+                   RowBox[{"4", " ", "b"}], "-", 
+                   RowBox[{"8", " ", "c"}], "+", 
+                   RowBox[{"8", " ", "\[Lambda]"}], "+", 
+                   RowBox[{"3", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}]}], ")"}]}], "+", 
+                RowBox[{"\[Theta]", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"-", "4"}], "+", 
+                   RowBox[{"4", " ", "b"}], "-", 
+                   RowBox[{"5", " ", "\[Lambda]"}], "+", 
+                   RowBox[{"4", " ", "c", " ", "\[Lambda]"}], "-", 
+                   RowBox[{"4", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}], "-", 
+                   SuperscriptBox["\[Lambda]", "3"]}], ")"}]}]}], ")"}]}]}], 
+            ")"}]}], "+", 
+          RowBox[{"2", " ", 
+           SuperscriptBox["\[Beta]", "4"], " ", "\[Theta]", " ", 
+           RowBox[{"(", 
+            RowBox[{"\[Lambda]", "+", 
+             RowBox[{"2", " ", 
+              SuperscriptBox["\[Alpha]", "2"], " ", 
+              SuperscriptBox["\[Theta]", "6"], " ", 
+              SuperscriptBox["\[Lambda]", "2"], " ", 
+              SuperscriptBox[
+               RowBox[{"(", 
+                RowBox[{"\[Alpha]", "+", "\[Lambda]"}], ")"}], "2"]}], "+", 
+             RowBox[{"\[Theta]", " ", 
+              RowBox[{"(", 
+               RowBox[{"2", "+", "\[Lambda]", "+", 
+                RowBox[{"2", " ", "b", " ", "\[Lambda]"}], "-", 
+                RowBox[{"2", " ", 
+                 SuperscriptBox["\[Alpha]", "2"], " ", "\[Lambda]"}], "+", 
+                RowBox[{"2", " ", 
+                 RowBox[{"(", 
+                  RowBox[{"1", "+", "c"}], ")"}], " ", 
+                 SuperscriptBox["\[Lambda]", "2"]}], "+", 
+                SuperscriptBox["\[Lambda]", "3"], "+", 
+                RowBox[{"\[Alpha]", " ", 
+                 RowBox[{"(", 
+                  RowBox[{"1", "+", "\[Lambda]"}], ")"}], " ", 
+                 RowBox[{"(", 
+                  RowBox[{"2", "-", 
+                   RowBox[{"2", " ", "b"}], "+", 
+                   RowBox[{"3", " ", "\[Lambda]"}], "-", 
+                   RowBox[{"2", " ", "c", " ", "\[Lambda]"}], "+", 
+                   RowBox[{"2", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}]}], ")"}]}]}], ")"}]}], 
+             "-", 
+             RowBox[{
+              SuperscriptBox["\[Theta]", "5"], " ", 
+              SuperscriptBox["\[Lambda]", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"6", " ", 
+                 SuperscriptBox["\[Alpha]", "4"]}], "-", 
+                RowBox[{"2", " ", "\[Lambda]"}], "+", 
+                RowBox[{"4", " ", "\[Alpha]", " ", "\[Lambda]"}], "+", 
+                RowBox[{
+                 SuperscriptBox["\[Alpha]", "3"], " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"-", "1"}], "+", 
+                   RowBox[{"12", " ", "\[Lambda]"}]}], ")"}]}], "+", 
+                RowBox[{
+                 SuperscriptBox["\[Alpha]", "2"], " ", 
+                 RowBox[{"(", 
+                  RowBox[{"1", "+", 
+                   RowBox[{"7", " ", "\[Lambda]"}], "+", 
+                   RowBox[{"8", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}]}], ")"}]}]}], ")"}]}], 
+             "+", 
+             RowBox[{
+              SuperscriptBox["\[Theta]", "4"], " ", "\[Lambda]", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"6", " ", 
+                 SuperscriptBox["\[Alpha]", "4"], " ", "\[Lambda]"}], "+", 
+                RowBox[{
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{
+                    RowBox[{"-", "2"}], " ", "b"}], "+", 
+                   RowBox[{"4", " ", "c"}], "-", 
+                   RowBox[{"7", " ", "\[Lambda]"}]}], ")"}], " ", 
+                 "\[Lambda]"}], "+", 
+                RowBox[{"\[Alpha]", " ", "\[Lambda]", " ", 
+                 RowBox[{"(", 
+                  RowBox[{"1", "+", 
+                   RowBox[{"10", " ", "\[Lambda]"}]}], ")"}]}], "+", 
+                RowBox[{
+                 SuperscriptBox["\[Alpha]", "3"], " ", 
+                 RowBox[{"(", 
+                  RowBox[{"3", "-", 
+                   RowBox[{"5", " ", "\[Lambda]"}], "+", 
+                   RowBox[{"12", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}]}], ")"}]}], "+", 
+                RowBox[{
+                 SuperscriptBox["\[Alpha]", "2"], " ", "\[Lambda]", " ", 
+                 RowBox[{"(", 
+                  RowBox[{"7", "+", 
+                   RowBox[{"4", " ", "b"}], "-", 
+                   RowBox[{"8", " ", "c"}], "+", 
+                   RowBox[{"21", " ", "\[Lambda]"}], "+", 
+                   RowBox[{"12", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}]}], ")"}]}]}], ")"}]}], 
+             "-", 
+             RowBox[{
+              SuperscriptBox["\[Theta]", "3"], " ", "\[Lambda]", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "2"}], "-", 
+                RowBox[{"2", " ", "\[Lambda]"}], "+", 
+                RowBox[{"2", " ", "c", " ", "\[Lambda]"}], "+", 
+                RowBox[{"2", " ", 
+                 SuperscriptBox["\[Alpha]", "4"], " ", "\[Lambda]"}], "-", 
+                RowBox[{"9", " ", 
+                 SuperscriptBox["\[Lambda]", "2"]}], "+", 
+                RowBox[{
+                 SuperscriptBox["\[Alpha]", "3"], " ", "\[Lambda]", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"-", "7"}], "+", 
+                   RowBox[{"4", " ", "\[Lambda]"}]}], ")"}]}], "+", 
+                RowBox[{"b", " ", 
+                 RowBox[{"(", 
+                  RowBox[{"2", "+", 
+                   RowBox[{"4", " ", 
+                    SuperscriptBox["\[Alpha]", "2"], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "1"}], "+", "\[Lambda]"}], ")"}]}], "-", 
+                   RowBox[{"2", " ", "\[Alpha]", " ", "\[Lambda]"}]}], 
+                  ")"}]}], "+", 
+                RowBox[{"\[Alpha]", " ", 
+                 RowBox[{"(", 
+                  RowBox[{"5", "-", 
+                   RowBox[{"3", " ", "\[Lambda]"}], "+", 
+                   RowBox[{"4", " ", "c", " ", "\[Lambda]"}], "+", 
+                   RowBox[{"6", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}]}], ")"}]}], "+", 
+                RowBox[{
+                 SuperscriptBox["\[Alpha]", "2"], " ", 
+                 RowBox[{"(", 
+                  RowBox[{"7", "+", 
+                   RowBox[{"11", " ", "\[Lambda]"}], "-", 
+                   RowBox[{"12", " ", "c", " ", "\[Lambda]"}], "+", 
+                   RowBox[{"21", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}], "+", 
+                   RowBox[{"8", " ", 
+                    SuperscriptBox["\[Lambda]", "3"]}]}], ")"}]}]}], ")"}]}], 
+             "+", 
+             RowBox[{
+              SuperscriptBox["\[Theta]", "2"], " ", "\[Lambda]", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "4"}], "-", 
+                RowBox[{"4", " ", "\[Lambda]"}], "+", 
+                RowBox[{"2", " ", "b", " ", "\[Lambda]"}], "-", 
+                RowBox[{"5", " ", 
+                 SuperscriptBox["\[Lambda]", "2"]}], "-", 
+                RowBox[{"3", " ", 
+                 SuperscriptBox["\[Alpha]", "3"], " ", 
+                 RowBox[{"(", 
+                  RowBox[{"1", "+", "\[Lambda]"}], ")"}]}], "-", 
+                RowBox[{"\[Alpha]", " ", "\[Lambda]", " ", 
+                 RowBox[{"(", 
+                  RowBox[{"9", "+", 
+                   RowBox[{"2", " ", "b"}], "+", 
+                   RowBox[{"2", " ", "\[Lambda]"}]}], ")"}]}], "+", 
+                RowBox[{
+                 SuperscriptBox["\[Alpha]", "2"], " ", 
+                 RowBox[{"(", 
+                  RowBox[{"9", "-", 
+                   RowBox[{"4", " ", "b"}], "+", 
+                   RowBox[{"5", " ", "\[Lambda]"}], "+", 
+                   RowBox[{"7", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}], "+", 
+                   RowBox[{"2", " ", 
+                    SuperscriptBox["\[Lambda]", "3"]}]}], ")"}]}], "+", 
+                RowBox[{"c", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{
+                    RowBox[{"-", "4"}], " ", "\[Lambda]"}], "-", 
+                   RowBox[{"4", " ", 
+                    SuperscriptBox["\[Alpha]", "2"], " ", "\[Lambda]"}], "+", 
+                   RowBox[{"\[Alpha]", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"4", "+", 
+                    RowBox[{"6", " ", "\[Lambda]"}]}], ")"}]}]}], ")"}]}]}], 
+               ")"}]}]}], ")"}]}], "+", 
+          RowBox[{
+           SuperscriptBox["\[Beta]", "3"], " ", "\[Theta]", " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"6", " ", 
+              SuperscriptBox["\[Alpha]", "3"], " ", 
+              SuperscriptBox["\[Theta]", "6"], " ", 
+              SuperscriptBox["\[Lambda]", "2"], " ", 
+              SuperscriptBox[
+               RowBox[{"(", 
+                RowBox[{"\[Alpha]", "+", "\[Lambda]"}], ")"}], "2"]}], "-", 
+             RowBox[{"4", " ", "\[Alpha]", " ", "\[Theta]", " ", 
+              SuperscriptBox[
+               RowBox[{"(", 
+                RowBox[{"b", "+", 
+                 RowBox[{"b", " ", "\[Theta]", " ", "\[Lambda]"}]}], ")"}], 
+               "2"]}], "+", 
+             RowBox[{"4", " ", 
+              RowBox[{"(", 
+               RowBox[{"1", "+", 
+                SuperscriptBox["\[Lambda]", "2"], "+", 
+                RowBox[{"c", " ", "\[Lambda]", " ", 
+                 RowBox[{"(", 
+                  RowBox[{"1", "+", "\[Lambda]"}], ")"}]}], "+", 
+                RowBox[{"\[Alpha]", " ", "\[Lambda]", " ", 
+                 RowBox[{"(", 
+                  RowBox[{"1", "+", "\[Lambda]"}], ")"}]}]}], ")"}]}], "+", 
+             RowBox[{"2", " ", 
+              SuperscriptBox["\[Theta]", "4"], " ", "\[Lambda]", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"4", " ", 
+                 SuperscriptBox["\[Alpha]", "5"], " ", "\[Lambda]"}], "+", 
+                RowBox[{"2", " ", 
+                 RowBox[{"(", 
+                  RowBox[{"1", "-", 
+                   RowBox[{"2", " ", "c"}]}], ")"}], " ", 
+                 SuperscriptBox["\[Lambda]", "2"]}], "-", 
+                RowBox[{
+                 RowBox[{"(", 
+                  RowBox[{"27", "+", 
+                   RowBox[{"8", " ", "c"}]}], ")"}], " ", "\[Alpha]", " ", 
+                 SuperscriptBox["\[Lambda]", "2"]}], "-", 
+                RowBox[{
+                 SuperscriptBox["\[Alpha]", "2"], " ", "\[Lambda]", " ", 
+                 RowBox[{"(", 
+                  RowBox[{"1", "+", 
+                   RowBox[{"2", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "6"}], "+", 
+                    RowBox[{"5", " ", "c"}]}], ")"}], " ", "\[Lambda]"}]}], 
+                  ")"}]}], "+", 
+                RowBox[{
+                 SuperscriptBox["\[Alpha]", "4"], " ", 
+                 RowBox[{"(", 
+                  RowBox[{"3", "-", 
+                   RowBox[{"7", " ", "\[Lambda]"}], "+", 
+                   RowBox[{"18", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}]}], ")"}]}], "+", 
+                RowBox[{
+                 SuperscriptBox["\[Alpha]", "3"], " ", "\[Lambda]", " ", 
+                 RowBox[{"(", 
+                  RowBox[{"13", "-", 
+                   RowBox[{"10", " ", "c"}], "+", 
+                   RowBox[{"27", " ", "\[Lambda]"}], "+", 
+                   RowBox[{"18", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}]}], ")"}]}]}], ")"}]}], 
+             "-", 
+             RowBox[{"\[Alpha]", " ", 
+              SuperscriptBox["\[Theta]", "5"], " ", 
+              SuperscriptBox["\[Lambda]", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"13", " ", 
+                 SuperscriptBox["\[Alpha]", "4"]}], "-", 
+                RowBox[{"16", " ", "\[Lambda]"}], "+", 
+                RowBox[{"4", " ", 
+                 RowBox[{"(", 
+                  RowBox[{"3", "-", 
+                   RowBox[{"2", " ", "c"}]}], ")"}], " ", "\[Alpha]", " ", 
+                 "\[Lambda]"}], "+", 
+                RowBox[{"6", " ", 
+                 SuperscriptBox["\[Alpha]", "3"], " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"-", "1"}], "+", 
+                   RowBox[{"6", " ", "\[Lambda]"}]}], ")"}]}], "+", 
+                RowBox[{
+                 SuperscriptBox["\[Alpha]", "2"], " ", 
+                 RowBox[{"(", 
+                  RowBox[{"8", "-", 
+                   RowBox[{"8", " ", "c"}], "+", 
+                   RowBox[{"18", " ", "\[Lambda]"}], "+", 
+                   RowBox[{"24", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}]}], ")"}]}]}], ")"}]}], 
+             "-", 
+             RowBox[{"2", " ", "\[Theta]", " ", 
+              RowBox[{"(", 
+               RowBox[{"4", "+", 
+                RowBox[{"6", " ", "\[Lambda]"}], "+", 
+                RowBox[{
+                 SuperscriptBox["\[Alpha]", "3"], " ", "\[Lambda]"}], "+", 
+                RowBox[{"4", " ", 
+                 RowBox[{"(", 
+                  RowBox[{"2", "+", "c"}], ")"}], " ", 
+                 SuperscriptBox["\[Lambda]", "2"]}], "-", 
+                RowBox[{"2", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"-", "1"}], "+", "c"}], ")"}], " ", 
+                 SuperscriptBox["\[Lambda]", "3"]}], "-", 
+                RowBox[{
+                 SuperscriptBox["\[Alpha]", "2"], " ", 
+                 RowBox[{"(", 
+                  RowBox[{"4", "+", 
+                   RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"9", "-", 
+                    RowBox[{"2", " ", "c"}]}], ")"}], " ", "\[Lambda]"}], "+", 
+                   RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"7", "-", 
+                    RowBox[{"2", " ", "c"}]}], ")"}], " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}], "+", 
+                   RowBox[{"6", " ", 
+                    SuperscriptBox["\[Lambda]", "3"]}]}], ")"}]}], "+", 
+                RowBox[{"\[Alpha]", " ", "\[Lambda]", " ", 
+                 RowBox[{"(", 
+                  RowBox[{"7", "+", 
+                   RowBox[{"6", " ", "\[Lambda]"}], "+", 
+                   RowBox[{"2", " ", 
+                    SuperscriptBox["c", "2"], " ", "\[Lambda]"}], "-", 
+                   RowBox[{"3", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}], "-", 
+                   RowBox[{"4", " ", "c", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", "\[Lambda]", "+", 
+                    SuperscriptBox["\[Lambda]", "2"]}], ")"}]}]}], ")"}]}]}], 
+               ")"}]}], "-", 
+             RowBox[{"4", " ", "b", " ", 
+              RowBox[{"(", 
+               RowBox[{"1", "+", 
+                RowBox[{"\[Theta]", " ", "\[Lambda]"}]}], ")"}], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "1"}], "-", "\[Lambda]", "+", 
+                RowBox[{
+                 SuperscriptBox["\[Alpha]", "2"], " ", 
+                 SuperscriptBox["\[Theta]", "4"], " ", "\[Lambda]", " ", 
+                 RowBox[{"(", 
+                  RowBox[{"\[Alpha]", "+", "\[Lambda]"}], ")"}]}], "-", 
+                RowBox[{
+                 SuperscriptBox["\[Theta]", "3"], " ", "\[Lambda]", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"2", " ", 
+                    SuperscriptBox["\[Alpha]", "3"]}], "+", "\[Lambda]", "+", 
+                   RowBox[{"2", " ", "\[Alpha]", " ", "\[Lambda]"}], "+", 
+                   RowBox[{"2", " ", 
+                    SuperscriptBox["\[Alpha]", "2"], " ", "\[Lambda]"}]}], 
+                  ")"}]}], "+", 
+                RowBox[{
+                 SuperscriptBox["\[Theta]", "2"], " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{
+                    SuperscriptBox["\[Alpha]", "3"], " ", "\[Lambda]"}], "+", 
+                   RowBox[{"\[Lambda]", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    RowBox[{"2", " ", "\[Lambda]"}]}], ")"}]}], "+", 
+                   RowBox[{"2", " ", "\[Alpha]", " ", "\[Lambda]", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "-", 
+                    RowBox[{"2", " ", "c"}], "+", 
+                    RowBox[{"2", " ", "\[Lambda]"}]}], ")"}]}], "+", 
+                   RowBox[{
+                    SuperscriptBox["\[Alpha]", "2"], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "-", "\[Lambda]", "+", 
+                    SuperscriptBox["\[Lambda]", "2"]}], ")"}]}]}], ")"}]}], 
+                "+", 
+                RowBox[{"\[Theta]", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"-", "2"}], "-", 
+                   SuperscriptBox["\[Lambda]", "2"], "+", 
+                   RowBox[{
+                    SuperscriptBox["\[Alpha]", "2"], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", "\[Lambda]"}], ")"}]}], "-", 
+                   RowBox[{"2", " ", "\[Alpha]", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", "\[Lambda]", "-", 
+                    RowBox[{"c", " ", "\[Lambda]"}], "+", 
+                    SuperscriptBox["\[Lambda]", "2"]}], ")"}]}]}], ")"}]}]}], 
+               ")"}]}], "-", 
+             RowBox[{"2", " ", 
+              SuperscriptBox["\[Theta]", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{
+                 SuperscriptBox["\[Alpha]", "4"], " ", "\[Lambda]", " ", 
+                 RowBox[{"(", 
+                  RowBox[{"1", "+", "\[Lambda]"}], ")"}]}], "-", 
+                RowBox[{
+                 SuperscriptBox["\[Alpha]", "3"], " ", "\[Lambda]", " ", 
+                 RowBox[{"(", 
+                  RowBox[{"11", "+", 
+                   RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"5", "-", 
+                    RowBox[{"2", " ", "c"}]}], ")"}], " ", "\[Lambda]"}], "+", 
+                   RowBox[{"9", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}], "+", 
+                   RowBox[{"3", " ", 
+                    SuperscriptBox["\[Lambda]", "3"]}]}], ")"}]}], "+", 
+                RowBox[{
+                 SuperscriptBox["\[Alpha]", "2"], " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"-", "2"}], "-", 
+                   RowBox[{"2", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "1"}], "+", "c"}], ")"}], " ", "\[Lambda]"}],
+                    "+", 
+                   RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"15", "-", 
+                    RowBox[{"6", " ", "c"}]}], ")"}], " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}], "+", 
+                   RowBox[{"2", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"6", "+", "c"}], ")"}], " ", 
+                    SuperscriptBox["\[Lambda]", "3"]}]}], ")"}]}], "+", 
+                RowBox[{"2", " ", "\[Lambda]", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"-", "3"}], "-", 
+                   RowBox[{"5", " ", "\[Lambda]"}], "-", 
+                   RowBox[{"3", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}], "+", 
+                   RowBox[{"c", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"4", "+", "\[Lambda]", "+", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}]}], ")"}]}]}], ")"}]}], 
+                "+", 
+                RowBox[{"\[Alpha]", " ", "\[Lambda]", " ", 
+                 RowBox[{"(", 
+                  RowBox[{"3", "-", 
+                   RowBox[{"6", " ", "\[Lambda]"}], "-", 
+                   RowBox[{"8", " ", 
+                    SuperscriptBox["c", "2"], " ", "\[Lambda]"}], "+", 
+                   RowBox[{"17", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}], "+", 
+                   RowBox[{"4", " ", "c", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"2", "+", 
+                    RowBox[{"3", " ", "\[Lambda]"}], "+", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}]}], ")"}]}]}], 
+                  ")"}]}]}], ")"}]}], "-", 
+             RowBox[{
+              SuperscriptBox["\[Theta]", "3"], " ", "\[Lambda]", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{
+                 SuperscriptBox["\[Alpha]", "5"], " ", "\[Lambda]"}], "+", 
+                RowBox[{"2", " ", 
+                 SuperscriptBox["\[Alpha]", "4"], " ", 
+                 RowBox[{"(", 
+                  RowBox[{"2", "-", 
+                   RowBox[{"5", " ", "\[Lambda]"}], "+", 
+                   RowBox[{"6", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}]}], ")"}]}], "-", 
+                RowBox[{"2", " ", "\[Alpha]", " ", 
+                 RowBox[{"(", 
+                  RowBox[{"8", "-", 
+                   RowBox[{"2", " ", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"1", "-", 
+                    RowBox[{"2", " ", "c"}]}], ")"}], "2"], " ", 
+                    "\[Lambda]"}], "+", 
+                   RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"33", "+", 
+                    RowBox[{"20", " ", "c"}]}], ")"}], " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}]}], ")"}]}], "+", 
+                RowBox[{"2", " ", 
+                 SuperscriptBox["\[Alpha]", "3"], " ", 
+                 RowBox[{"(", 
+                  RowBox[{"10", "+", 
+                   RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"14", "-", 
+                    RowBox[{"8", " ", "c"}]}], ")"}], " ", "\[Lambda]"}], "+", 
+                   RowBox[{"27", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}], "+", 
+                   RowBox[{"12", " ", 
+                    SuperscriptBox["\[Lambda]", "3"]}]}], ")"}]}], "+", 
+                RowBox[{"4", " ", "\[Lambda]", " ", 
+                 RowBox[{"(", 
+                  RowBox[{"2", "+", 
+                   RowBox[{"3", " ", "\[Lambda]"}], "-", 
+                   RowBox[{"c", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"2", "+", 
+                    RowBox[{"5", " ", "\[Lambda]"}]}], ")"}]}]}], ")"}]}], 
+                "-", 
+                RowBox[{"2", " ", 
+                 SuperscriptBox["\[Alpha]", "2"], " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"-", "7"}], "+", 
+                   RowBox[{"9", " ", "\[Lambda]"}], "+", 
+                   RowBox[{"c", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"4", "-", 
+                    RowBox[{"4", " ", "\[Lambda]"}], "+", 
+                    RowBox[{"8", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}]}], ")"}]}]}], 
+                  ")"}]}]}], ")"}]}]}], ")"}]}], "+", 
+          RowBox[{
+           SuperscriptBox["\[Beta]", "2"], " ", 
+           RowBox[{"(", 
+            RowBox[{"4", "+", 
+             RowBox[{"4", " ", 
+              SuperscriptBox["\[Alpha]", "4"], " ", 
+              SuperscriptBox["\[Theta]", "7"], " ", 
+              SuperscriptBox["\[Lambda]", "2"], " ", 
+              SuperscriptBox[
+               RowBox[{"(", 
+                RowBox[{"\[Alpha]", "+", "\[Lambda]"}], ")"}], "2"]}], "-", 
+             RowBox[{
+              SuperscriptBox["\[Alpha]", "2"], " ", 
+              SuperscriptBox["\[Theta]", "6"], " ", 
+              SuperscriptBox["\[Lambda]", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"8", " ", 
+                 SuperscriptBox["\[Alpha]", "4"]}], "-", 
+                RowBox[{"24", " ", "\[Lambda]"}], "+", 
+                RowBox[{"8", " ", 
+                 RowBox[{"(", 
+                  RowBox[{"1", "+", "b", "-", 
+                   RowBox[{"2", " ", "c"}]}], ")"}], " ", "\[Alpha]", " ", 
+                 "\[Lambda]"}], "+", 
+                RowBox[{"6", " ", 
+                 SuperscriptBox["\[Alpha]", "3"], " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"-", "1"}], "+", 
+                   RowBox[{"4", " ", "\[Lambda]"}]}], ")"}]}], "+", 
+                RowBox[{
+                 SuperscriptBox["\[Alpha]", "2"], " ", 
+                 RowBox[{"(", 
+                  RowBox[{"7", "+", 
+                   RowBox[{"8", " ", "b"}], "-", 
+                   RowBox[{"16", " ", "c"}], "+", 
+                   RowBox[{"10", " ", "\[Lambda]"}], "+", 
+                   RowBox[{"16", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}]}], ")"}]}]}], ")"}]}], 
+             "+", 
+             RowBox[{"2", " ", "\[Theta]", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "8"}], "+", 
+                RowBox[{"2", " ", 
+                 SuperscriptBox["b", "2"]}], "-", 
+                RowBox[{"4", " ", "\[Lambda]"}], "-", 
+                RowBox[{"2", " ", 
+                 SuperscriptBox["\[Lambda]", "2"]}], "+", 
+                RowBox[{"2", " ", 
+                 SuperscriptBox["c", "2"], " ", 
+                 SuperscriptBox["\[Lambda]", "2"]}], "+", 
+                RowBox[{"2", " ", "b", " ", 
+                 RowBox[{"(", 
+                  RowBox[{"\[Alpha]", "+", 
+                   RowBox[{"2", " ", "c", " ", "\[Lambda]"}], "+", 
+                   RowBox[{"\[Alpha]", " ", "\[Lambda]"}]}], ")"}]}], "+", 
+                RowBox[{
+                 SuperscriptBox["\[Alpha]", "2"], " ", 
+                 RowBox[{"(", 
+                  RowBox[{"4", "+", "\[Lambda]", "+", 
+                   RowBox[{"4", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}]}], ")"}]}], "+", 
+                RowBox[{"2", " ", "\[Alpha]", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"-", "2"}], "+", 
+                   RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "4"}], "+", "c"}], ")"}], " ", "\[Lambda]"}],
+                    "+", 
+                   RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"2", "+", "c"}], ")"}], " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}]}], ")"}]}]}], ")"}]}], 
+             "+", 
+             RowBox[{
+              SuperscriptBox["\[Theta]", "5"], " ", "\[Lambda]", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"4", " ", 
+                 SuperscriptBox["\[Alpha]", "6"], " ", "\[Lambda]"}], "+", 
+                RowBox[{"16", " ", "c", " ", 
+                 SuperscriptBox["\[Lambda]", "2"]}], "-", 
+                RowBox[{"4", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"-", "3"}], "+", 
+                   RowBox[{"4", " ", "c"}]}], ")"}], " ", "\[Alpha]", " ", 
+                 SuperscriptBox["\[Lambda]", "2"]}], "+", 
+                RowBox[{"2", " ", 
+                 SuperscriptBox["\[Alpha]", "5"], " ", 
+                 RowBox[{"(", 
+                  RowBox[{"1", "-", 
+                   RowBox[{"6", " ", "\[Lambda]"}], "+", 
+                   RowBox[{"12", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}]}], ")"}]}], "+", 
+                RowBox[{
+                 SuperscriptBox["\[Alpha]", "4"], " ", "\[Lambda]", " ", 
+                 RowBox[{"(", 
+                  RowBox[{"19", "-", 
+                   RowBox[{"24", " ", "c"}], "+", 
+                   RowBox[{"30", " ", "\[Lambda]"}], "+", 
+                   RowBox[{"24", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}]}], ")"}]}], "-", 
+                RowBox[{"2", " ", 
+                 SuperscriptBox["\[Alpha]", "2"], " ", "\[Lambda]", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"39", " ", "\[Lambda]"}], "+", 
+                   RowBox[{"4", " ", "c", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"3", "+", 
+                    RowBox[{"4", " ", "\[Lambda]"}]}], ")"}]}]}], ")"}]}], 
+                "+", 
+                RowBox[{"4", " ", "b", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"2", " ", 
+                    SuperscriptBox["\[Alpha]", "4"], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "1"}], "+", "\[Lambda]"}], ")"}]}], "-", 
+                   RowBox[{"2", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}], "+", 
+                   RowBox[{"2", " ", "\[Alpha]", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}], "+", 
+                   RowBox[{
+                    SuperscriptBox["\[Alpha]", "3"], " ", "\[Lambda]", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "3"}], "+", 
+                    RowBox[{"4", " ", "\[Lambda]"}]}], ")"}]}], "+", 
+                   RowBox[{
+                    SuperscriptBox["\[Alpha]", "2"], " ", "\[Lambda]", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"3", "+", 
+                    RowBox[{"4", " ", "\[Lambda]"}]}], ")"}]}]}], ")"}]}], 
+                "-", 
+                RowBox[{"2", " ", 
+                 SuperscriptBox["\[Alpha]", "3"], " ", "\[Lambda]", " ", 
+                 RowBox[{"(", 
+                  RowBox[{"1", "-", 
+                   RowBox[{"6", " ", "\[Lambda]"}], "+", 
+                   RowBox[{"4", " ", "c", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "1"}], "+", 
+                    RowBox[{"5", " ", "\[Lambda]"}]}], ")"}]}]}], ")"}]}]}], 
+               ")"}]}], "+", 
+             RowBox[{"2", " ", 
+              SuperscriptBox["\[Theta]", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{"2", "+", 
+                RowBox[{"12", " ", "\[Lambda]"}], "-", 
+                RowBox[{"4", " ", "c", " ", "\[Lambda]"}], "+", 
+                RowBox[{"6", " ", 
+                 SuperscriptBox["\[Lambda]", "2"]}], "-", 
+                RowBox[{"6", " ", 
+                 SuperscriptBox["c", "2"], " ", 
+                 SuperscriptBox["\[Lambda]", "2"]}], "-", 
+                RowBox[{"4", " ", "c", " ", 
+                 SuperscriptBox["\[Lambda]", "3"]}], "+", 
+                RowBox[{
+                 SuperscriptBox["b", "2"], " ", 
+                 RowBox[{"(", 
+                  RowBox[{"2", "+", 
+                   RowBox[{"4", " ", "\[Lambda]"}]}], ")"}]}], "+", 
+                RowBox[{
+                 SuperscriptBox["\[Alpha]", "3"], " ", 
+                 RowBox[{"(", 
+                  RowBox[{"2", "+", 
+                   RowBox[{"7", " ", "\[Lambda]"}], "+", 
+                   RowBox[{"3", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}], "+", 
+                   RowBox[{"6", " ", 
+                    SuperscriptBox["\[Lambda]", "3"]}]}], ")"}]}], "+", 
+                RowBox[{"2", " ", "\[Alpha]", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"-", "5"}], "-", 
+                   RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"3", "+", "c"}], ")"}], " ", "\[Lambda]"}], "-", 
+                   RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"9", "+", 
+                    RowBox[{"4", " ", "c"}]}], ")"}], " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}], "+", 
+                   RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "3"}], "+", 
+                    RowBox[{"2", " ", "c"}]}], ")"}], " ", 
+                    SuperscriptBox["\[Lambda]", "3"]}]}], ")"}]}], "+", 
+                RowBox[{
+                 SuperscriptBox["\[Alpha]", "2"], " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"-", "6"}], "+", 
+                   RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "13"}], "+", 
+                    RowBox[{"8", " ", "c"}]}], ")"}], " ", "\[Lambda]"}], "+", 
+                   RowBox[{"2", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "9"}], "+", "c"}], ")"}], " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}], "+", 
+                   RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"3", "+", 
+                    RowBox[{"8", " ", "c"}]}], ")"}], " ", 
+                    SuperscriptBox["\[Lambda]", "3"]}]}], ")"}]}], "+", 
+                RowBox[{"2", " ", "b", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"2", " ", "c", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "1"}], "+", "\[Lambda]"}], ")"}], " ", 
+                    "\[Lambda]"}], "-", 
+                   RowBox[{"2", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    SuperscriptBox["\[Lambda]", "2"]}], ")"}]}], "+", 
+                   RowBox[{"\[Alpha]", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "-", "\[Lambda]", "+", 
+                    RowBox[{"3", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}]}], ")"}]}], "+", 
+                   RowBox[{
+                    SuperscriptBox["\[Alpha]", "2"], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"4", "+", "\[Lambda]", "+", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}]}], ")"}]}]}], 
+                  ")"}]}]}], ")"}]}], "+", 
+             RowBox[{
+              SuperscriptBox["\[Theta]", "4"], " ", "\[Lambda]", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{
+                 SuperscriptBox["\[Alpha]", "5"], " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"-", "2"}], "+", 
+                   RowBox[{"6", " ", "\[Lambda]"}], "-", 
+                   RowBox[{"8", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}]}], ")"}]}], "+", 
+                RowBox[{
+                 SuperscriptBox["\[Alpha]", "4"], " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"-", "14"}], "+", 
+                   RowBox[{"8", " ", "b"}], "+", 
+                   RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "17"}], "+", 
+                    RowBox[{"8", " ", "c"}]}], ")"}], " ", "\[Lambda]"}], "-", 
+                   RowBox[{"30", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}], "-", 
+                   RowBox[{"16", " ", 
+                    SuperscriptBox["\[Lambda]", "3"]}]}], ")"}]}], "-", 
+                RowBox[{"4", " ", "\[Alpha]", " ", "\[Lambda]", " ", 
+                 RowBox[{"(", 
+                  RowBox[{"5", "+", 
+                   RowBox[{"c", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"2", "-", 
+                    RowBox[{"10", " ", "\[Lambda]"}]}], ")"}]}], "+", 
+                   RowBox[{"9", " ", "\[Lambda]"}], "+", 
+                   RowBox[{"b", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "3"}], "+", 
+                    RowBox[{"4", " ", "\[Lambda]"}]}], ")"}]}]}], ")"}]}], 
+                "+", 
+                RowBox[{"4", " ", "\[Lambda]", " ", 
+                 RowBox[{"(", 
+                  RowBox[{"1", "+", 
+                   SuperscriptBox["b", "2"], "+", 
+                   RowBox[{"4", " ", 
+                    SuperscriptBox["c", "2"]}], "-", 
+                   RowBox[{"10", " ", "c", " ", "\[Lambda]"}], "+", 
+                   RowBox[{"b", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "2"}], "-", 
+                    RowBox[{"4", " ", "c"}], "+", 
+                    RowBox[{"4", " ", "\[Lambda]"}]}], ")"}]}]}], ")"}]}], 
+                "+", 
+                RowBox[{"2", " ", 
+                 SuperscriptBox["\[Alpha]", "2"], " ", 
+                 RowBox[{"(", 
+                  RowBox[{"12", "+", 
+                   RowBox[{"2", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "5"}], "+", 
+                    RowBox[{"11", " ", "c"}]}], ")"}], " ", "\[Lambda]"}], 
+                   "+", 
+                   RowBox[{"5", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"9", "+", 
+                    RowBox[{"8", " ", "c"}]}], ")"}], " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}], "+", 
+                   RowBox[{"b", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"6", "-", 
+                    RowBox[{"16", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}]}], ")"}]}]}], ")"}]}], 
+                "+", 
+                RowBox[{"2", " ", 
+                 SuperscriptBox["\[Alpha]", "3"], " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"-", "7"}], "+", 
+                   RowBox[{"5", " ", "\[Lambda]"}], "+", 
+                   RowBox[{"6", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}], "-", 
+                   RowBox[{"2", " ", "b", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"2", "-", 
+                    RowBox[{"5", " ", "\[Lambda]"}], "+", 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}]}], ")"}]}], "+", 
+                   RowBox[{"2", " ", "c", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"2", "-", 
+                    RowBox[{"3", " ", "\[Lambda]"}], "+", 
+                    RowBox[{"8", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}]}], ")"}]}]}], 
+                  ")"}]}]}], ")"}]}], "+", 
+             RowBox[{
+              SuperscriptBox["\[Theta]", "3"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{
+                 SuperscriptBox["\[Alpha]", "4"], " ", "\[Lambda]", " ", 
+                 RowBox[{"(", 
+                  RowBox[{"14", "+", 
+                   RowBox[{"5", " ", "\[Lambda]"}], "+", 
+                   RowBox[{"10", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}], "+", 
+                   RowBox[{"4", " ", 
+                    SuperscriptBox["\[Lambda]", "3"]}]}], ")"}]}], "+", 
+                RowBox[{"4", " ", "\[Alpha]", " ", "\[Lambda]", " ", 
+                 RowBox[{"(", 
+                  RowBox[{"7", "+", 
+                   RowBox[{"12", " ", "\[Lambda]"}], "+", 
+                   RowBox[{"9", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}], "+", 
+                   RowBox[{"c", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "2"}], "+", 
+                    RowBox[{"5", " ", "\[Lambda]"}], "-", 
+                    RowBox[{"8", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}]}], ")"}]}], "+", 
+                   RowBox[{"2", " ", "b", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "-", 
+                    RowBox[{"3", " ", "\[Lambda]"}], "+", 
+                    SuperscriptBox["\[Lambda]", "2"]}], ")"}]}]}], ")"}]}], 
+                "-", 
+                RowBox[{"2", " ", 
+                 SuperscriptBox["\[Alpha]", "3"], " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"-", "4"}], "+", 
+                   RowBox[{"7", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}], "+", 
+                   RowBox[{"14", " ", 
+                    SuperscriptBox["\[Lambda]", "3"]}], "+", 
+                   RowBox[{"2", " ", "c", " ", "\[Lambda]", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "-", "\[Lambda]", "+", 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}]}], ")"}]}], "+", 
+                   RowBox[{"b", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"2", "-", 
+                    RowBox[{"2", " ", "\[Lambda]"}], "+", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}]}], ")"}]}]}], ")"}]}], 
+                "-", 
+                RowBox[{"2", " ", 
+                 SuperscriptBox["\[Alpha]", "2"], " ", "\[Lambda]", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"\[Lambda]", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "24"}], "+", 
+                    RowBox[{"14", " ", "b"}], "+", 
+                    RowBox[{"21", " ", "\[Lambda]"}], "-", 
+                    RowBox[{"8", " ", "b", " ", "\[Lambda]"}]}], ")"}]}], "+", 
+                   RowBox[{"4", " ", "c", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"4", "+", 
+                    RowBox[{"3", " ", "\[Lambda]"}], "+", 
+                    RowBox[{"8", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}]}], ")"}]}]}], ")"}]}], 
+                "+", 
+                RowBox[{"4", " ", "\[Lambda]", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"-", "4"}], "-", 
+                   RowBox[{"3", " ", "\[Lambda]"}], "+", 
+                   RowBox[{
+                    SuperscriptBox["b", "2"], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"2", "+", "\[Lambda]"}], ")"}]}], "+", 
+                   RowBox[{"c", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"4", "+", 
+                    RowBox[{"8", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}]}], ")"}]}], "-", 
+                   RowBox[{"2", " ", "b", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "1"}], "+", "\[Lambda]"}], ")"}], "2"], "+", 
+                    RowBox[{"c", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"2", "+", "\[Lambda]"}], ")"}]}]}], ")"}]}]}], 
+                  ")"}]}]}], ")"}]}]}], ")"}]}], "+", 
+          RowBox[{"\[Beta]", " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              SuperscriptBox["\[Alpha]", "7"], " ", 
+              SuperscriptBox[
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"-", "1"}], "+", "\[Theta]"}], ")"}], "2"], " ", 
+              SuperscriptBox["\[Theta]", "5"], " ", 
+              SuperscriptBox["\[Lambda]", "2"]}], "+", 
+             RowBox[{"2", " ", 
+              SuperscriptBox["\[Alpha]", "6"], " ", 
+              SuperscriptBox[
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"-", "1"}], "+", "\[Theta]"}], ")"}], "2"], " ", 
+              SuperscriptBox["\[Theta]", "4"], " ", 
+              SuperscriptBox["\[Lambda]", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{"1", "+", 
+                RowBox[{
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"-", "1"}], "+", "\[Theta]"}], ")"}], " ", 
+                 "\[Lambda]"}]}], ")"}]}], "-", 
+             RowBox[{"16", " ", 
+              RowBox[{"(", 
+               RowBox[{"1", "+", 
+                RowBox[{
+                 RowBox[{"(", 
+                  RowBox[{"1", "+", "b", "-", 
+                   RowBox[{"2", " ", "c"}]}], ")"}], " ", 
+                 SuperscriptBox["\[Theta]", "2"], " ", "\[Lambda]"}], "+", 
+                RowBox[{"\[Theta]", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"-", "2"}], "+", "b", "+", 
+                   RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "1"}], "+", "c"}], ")"}], " ", 
+                    "\[Lambda]"}]}], ")"}]}]}], ")"}]}], "+", 
+             RowBox[{
+              SuperscriptBox["\[Alpha]", "5"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "1"}], "+", "\[Theta]"}], ")"}], " ", 
+              SuperscriptBox["\[Theta]", "3"], " ", "\[Lambda]", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "4"}], "+", 
+                RowBox[{
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"-", "1"}], "+", 
+                   RowBox[{"2", " ", "\[Theta]"}]}], ")"}], " ", 
+                 RowBox[{"(", 
+                  RowBox[{"1", "-", "\[Theta]", "+", 
+                   RowBox[{"4", " ", "c", " ", "\[Theta]"}]}], ")"}], " ", 
+                 "\[Lambda]"}], "-", 
+                RowBox[{"2", " ", 
+                 SuperscriptBox[
+                  RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{"-", "1"}], "+", "\[Theta]"}], ")"}], "2"], " ", 
+                 SuperscriptBox["\[Lambda]", "2"]}], "+", 
+                RowBox[{
+                 SuperscriptBox[
+                  RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{"-", "1"}], "+", "\[Theta]"}], ")"}], "3"], " ", 
+                 SuperscriptBox["\[Lambda]", "3"]}], "-", 
+                RowBox[{"4", " ", "b", " ", "\[Theta]", " ", 
+                 RowBox[{"(", 
+                  RowBox[{"1", "+", 
+                   RowBox[{"\[Theta]", " ", "\[Lambda]"}]}], ")"}]}]}], 
+               ")"}]}], "-", 
+             RowBox[{"2", " ", 
+              SuperscriptBox["\[Alpha]", "4"], " ", 
+              SuperscriptBox["\[Theta]", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{
+                 RowBox[{"(", 
+                  RowBox[{"1", "+", 
+                   RowBox[{"2", " ", "b"}], "-", 
+                   RowBox[{"4", " ", "c"}]}], ")"}], " ", 
+                 SuperscriptBox["\[Theta]", "4"], " ", 
+                 SuperscriptBox["\[Lambda]", "3"]}], "-", 
+                RowBox[{
+                 SuperscriptBox["\[Theta]", "3"], " ", 
+                 SuperscriptBox["\[Lambda]", "2"], " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"c", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"4", "-", 
+                    RowBox[{"10", " ", "\[Lambda]"}]}], ")"}]}], "+", 
+                   RowBox[{"4", " ", "b", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "1"}], "+", "\[Lambda]"}], ")"}]}], "+", 
+                   "\[Lambda]"}], ")"}]}], "-", 
+                RowBox[{"2", " ", 
+                 RowBox[{"(", 
+                  RowBox[{"\[Lambda]", "+", 
+                   SuperscriptBox["\[Lambda]", "3"]}], ")"}]}], "+", 
+                RowBox[{"\[Theta]", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"-", "2"}], "-", 
+                   RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    RowBox[{"2", " ", "b"}]}], ")"}], " ", "\[Lambda]"}], "+", 
+                   RowBox[{"2", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"b", "-", "c"}], ")"}], " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}], "+", 
+                   RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"5", "+", 
+                    RowBox[{"2", " ", "c"}]}], ")"}], " ", 
+                    SuperscriptBox["\[Lambda]", "3"]}]}], ")"}]}], "+", 
+                RowBox[{
+                 SuperscriptBox["\[Theta]", "2"], " ", "\[Lambda]", " ", 
+                 RowBox[{"(", 
+                  RowBox[{"3", "+", 
+                   RowBox[{"2", " ", "c", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"3", "-", 
+                    RowBox[{"4", " ", "\[Lambda]"}]}], ")"}], " ", 
+                    "\[Lambda]"}], "-", 
+                   RowBox[{"3", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}], "+", 
+                   RowBox[{"2", " ", "b", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "-", 
+                    RowBox[{"3", " ", "\[Lambda]"}], "+", 
+                    SuperscriptBox["\[Lambda]", "2"]}], ")"}]}]}], ")"}]}]}], 
+               ")"}]}], "+", 
+             RowBox[{"4", " ", 
+              SuperscriptBox["\[Alpha]", "2"], " ", "\[Theta]", " ", 
+              RowBox[{"(", 
+               RowBox[{"1", "-", 
+                RowBox[{"4", " ", "\[Lambda]"}], "+", 
+                SuperscriptBox["\[Lambda]", "2"], "+", 
+                RowBox[{
+                 RowBox[{"(", 
+                  RowBox[{"3", "+", "b", "-", 
+                   RowBox[{"2", " ", "c"}]}], ")"}], " ", 
+                 SuperscriptBox["\[Theta]", "4"], " ", 
+                 SuperscriptBox["\[Lambda]", "3"]}], "+", 
+                RowBox[{
+                 SuperscriptBox["\[Theta]", "3"], " ", 
+                 SuperscriptBox["\[Lambda]", "2"], " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"-", "4"}], "+", 
+                   RowBox[{"b", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"3", "-", 
+                    RowBox[{"2", " ", "\[Lambda]"}]}], ")"}]}], "-", 
+                   RowBox[{"9", " ", "\[Lambda]"}], "+", 
+                   RowBox[{"c", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "4"}], "+", 
+                    RowBox[{"5", " ", "\[Lambda]"}]}], ")"}]}]}], ")"}]}], 
+                "+", 
+                RowBox[{
+                 SuperscriptBox["\[Theta]", "2"], " ", "\[Lambda]", " ", 
+                 RowBox[{"(", 
+                  RowBox[{"5", "+", 
+                   RowBox[{"9", " ", "\[Lambda]"}], "+", 
+                   RowBox[{"9", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}], "+", 
+                   RowBox[{"c", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "6"}], "+", 
+                    RowBox[{"6", " ", "\[Lambda]"}], "-", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}]}], ")"}]}], "+", 
+                   RowBox[{"b", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"5", "-", 
+                    RowBox[{"4", " ", "\[Lambda]"}], "+", 
+                    SuperscriptBox["\[Lambda]", "2"]}], ")"}]}]}], ")"}]}], 
+                "+", 
+                RowBox[{"\[Theta]", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"-", "8"}], "+", 
+                   RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "1"}], "+", 
+                    RowBox[{"3", " ", "c"}]}], ")"}], " ", "\[Lambda]"}], "-", 
+                   RowBox[{"2", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"3", "+", "c"}], ")"}], " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}], "+", 
+                   RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "3"}], "+", "c"}], ")"}], " ", 
+                    SuperscriptBox["\[Lambda]", "3"]}], "+", 
+                   RowBox[{"b", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"3", "-", 
+                    RowBox[{"2", " ", "\[Lambda]"}], "+", 
+                    SuperscriptBox["\[Lambda]", "2"]}], ")"}]}]}], ")"}]}]}], 
+               ")"}]}], "-", 
+             RowBox[{"8", " ", "\[Alpha]", " ", 
+              RowBox[{"(", 
+               RowBox[{"2", "+", 
+                RowBox[{"2", " ", 
+                 RowBox[{"(", 
+                  RowBox[{"b", "-", 
+                   RowBox[{"2", " ", "c"}]}], ")"}], " ", 
+                 SuperscriptBox["\[Theta]", "5"], " ", 
+                 SuperscriptBox["\[Lambda]", "3"]}], "+", 
+                RowBox[{
+                 SuperscriptBox["\[Theta]", "4"], " ", 
+                 SuperscriptBox["\[Lambda]", "2"], " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"-", "1"}], "+", 
+                   SuperscriptBox["b", "2"], "+", 
+                   RowBox[{"4", " ", 
+                    SuperscriptBox["c", "2"]}], "+", 
+                   RowBox[{"b", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"2", "-", 
+                    RowBox[{"4", " ", "c"}], "-", 
+                    RowBox[{"4", " ", "\[Lambda]"}]}], ")"}]}], "+", 
+                   RowBox[{"10", " ", "c", " ", "\[Lambda]"}]}], ")"}]}], "+", 
+                RowBox[{"\[Theta]", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"-", "2"}], "+", 
+                   RowBox[{"4", " ", "b"}], "+", "\[Lambda]", "+", 
+                   RowBox[{"4", " ", "c", " ", "\[Lambda]"}], "+", 
+                   SuperscriptBox["\[Lambda]", "2"]}], ")"}]}], "+", 
+                RowBox[{
+                 SuperscriptBox["\[Theta]", "2"], " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"-", "1"}], "+", 
+                   SuperscriptBox["b", "2"], "-", 
+                   RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"5", "+", 
+                    RowBox[{"6", " ", "c"}]}], ")"}], " ", "\[Lambda]"}], "+", 
+                   RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "3"}], "+", 
+                    SuperscriptBox["c", "2"]}], ")"}], " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}], "+", 
+                   RowBox[{"2", " ", "c", " ", 
+                    SuperscriptBox["\[Lambda]", "3"]}], "+", 
+                   RowBox[{"2", " ", "b", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"2", "+", "c"}], ")"}], " ", "\[Lambda]"}], "+", 
+                    SuperscriptBox["\[Lambda]", "2"]}], ")"}]}]}], ")"}]}], 
+                "+", 
+                RowBox[{
+                 SuperscriptBox["\[Theta]", "3"], " ", "\[Lambda]", " ", 
+                 RowBox[{"(", 
+                  RowBox[{"4", "+", 
+                   RowBox[{"2", " ", 
+                    SuperscriptBox["b", "2"]}], "+", 
+                   RowBox[{"2", " ", "b", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"c", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "2"}], "+", "\[Lambda]"}], ")"}]}], "+", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "1"}], "+", "\[Lambda]"}], ")"}], "2"]}], 
+                    ")"}]}], "+", 
+                   RowBox[{"3", " ", "\[Lambda]"}], "-", 
+                   RowBox[{"4", " ", 
+                    SuperscriptBox["c", "2"], " ", "\[Lambda]"}], "-", 
+                   RowBox[{"4", " ", "c", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}]}], ")"}]}]}], 
+                  ")"}]}]}], ")"}]}], "+", 
+             RowBox[{"2", " ", 
+              SuperscriptBox["\[Alpha]", "3"], " ", "\[Theta]", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"8", " ", 
+                 SuperscriptBox["\[Theta]", "5"], " ", 
+                 SuperscriptBox["\[Lambda]", "3"]}], "+", 
+                RowBox[{"2", " ", 
+                 RowBox[{"(", 
+                  RowBox[{"1", "+", 
+                   SuperscriptBox["\[Lambda]", "2"]}], ")"}]}], "+", 
+                RowBox[{
+                 SuperscriptBox["\[Theta]", "4"], " ", 
+                 SuperscriptBox["\[Lambda]", "2"], " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"2", " ", 
+                    SuperscriptBox["b", "2"]}], "+", 
+                   RowBox[{"8", " ", 
+                    SuperscriptBox["c", "2"]}], "-", 
+                   RowBox[{"25", " ", "\[Lambda]"}], "-", 
+                   RowBox[{"8", " ", "c", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", "\[Lambda]"}], ")"}]}], "+", 
+                   RowBox[{"b", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"4", "-", 
+                    RowBox[{"8", " ", "c"}], "+", 
+                    RowBox[{"4", " ", "\[Lambda]"}]}], ")"}]}]}], ")"}]}], 
+                "+", 
+                RowBox[{
+                 SuperscriptBox["\[Theta]", "3"], " ", "\[Lambda]", " ", 
+                 RowBox[{"(", 
+                  RowBox[{"8", "+", 
+                   RowBox[{"4", " ", 
+                    SuperscriptBox["b", "2"]}], "-", 
+                   RowBox[{"2", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"3", "-", 
+                    RowBox[{"6", " ", "c"}], "+", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["c", "2"]}]}], ")"}], " ", "\[Lambda]"}], 
+                   "+", 
+                   RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"27", "+", 
+                    RowBox[{"20", " ", "c"}]}], ")"}], " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}], "+", 
+                   RowBox[{"4", " ", "b", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    RowBox[{"c", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "2"}], "+", "\[Lambda]"}], ")"}]}], "-", 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}]}], ")"}]}]}], ")"}]}], 
+                "+", 
+                RowBox[{"\[Theta]", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"-", "2"}], "+", 
+                   RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "5"}], "+", 
+                    RowBox[{"4", " ", "c"}]}], ")"}], " ", "\[Lambda]"}], "-", 
+                   RowBox[{"10", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}], "+", 
+                   RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    RowBox[{"4", " ", "c"}]}], ")"}], " ", 
+                    SuperscriptBox["\[Lambda]", "3"]}], "+", 
+                   RowBox[{"4", " ", "b", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    SuperscriptBox["\[Lambda]", "2"]}], ")"}]}]}], ")"}]}], 
+                "+", 
+                RowBox[{
+                 SuperscriptBox["\[Theta]", "2"], " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"2", " ", 
+                    SuperscriptBox["b", "2"]}], "+", 
+                   RowBox[{"4", " ", "b", " ", "\[Lambda]", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"c", "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "2"}], "+", "\[Lambda]"}], ")"}], " ", 
+                    "\[Lambda]"}]}], ")"}]}], "-", 
+                   RowBox[{"\[Lambda]", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"3", "-", 
+                    RowBox[{"14", " ", "\[Lambda]"}], "-", 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["c", "2"], " ", "\[Lambda]"}], "+", 
+                    RowBox[{"11", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}], "+", 
+                    RowBox[{"4", " ", "c", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"2", "+", "\[Lambda]", "+", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}]}], ")"}]}]}], 
+                    ")"}]}]}], ")"}]}]}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+       ")"}], "/", 
+      RowBox[{"(", 
+       RowBox[{"4", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", "4"}], "+", 
+          RowBox[{
+           SuperscriptBox["\[Alpha]", "2"], " ", "\[Theta]", " ", 
+           RowBox[{"(", 
+            RowBox[{"1", "+", 
+             RowBox[{
+              SuperscriptBox[
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"-", "1"}], "+", "\[Theta]"}], ")"}], "2"], " ", 
+              SuperscriptBox["\[Lambda]", "2"]}]}], ")"}]}], "+", 
+          RowBox[{"2", " ", "\[Alpha]", " ", "\[Beta]", " ", "\[Theta]", " ", 
+           RowBox[{"(", 
+            RowBox[{"1", "+", 
+             RowBox[{
+              SuperscriptBox[
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"-", "1"}], "+", "\[Theta]"}], ")"}], "2"], " ", 
+              SuperscriptBox["\[Lambda]", "2"]}]}], ")"}]}], "+", 
+          RowBox[{
+           SuperscriptBox["\[Beta]", "2"], " ", "\[Theta]", " ", 
+           RowBox[{"(", 
+            RowBox[{"1", "+", 
+             RowBox[{
+              SuperscriptBox[
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"-", "1"}], "+", "\[Theta]"}], ")"}], "2"], " ", 
+              SuperscriptBox["\[Lambda]", "2"]}]}], ")"}]}]}], ")"}], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"\[Alpha]", " ", 
+           SuperscriptBox["\[Beta]", "3"], " ", "\[Theta]", " ", 
+           RowBox[{"(", 
+            RowBox[{"1", "+", 
+             RowBox[{"\[Theta]", " ", 
+              SuperscriptBox["\[Lambda]", "2"]}], "-", 
+             RowBox[{"2", " ", 
+              SuperscriptBox["\[Theta]", "2"], " ", 
+              SuperscriptBox["\[Lambda]", "2"]}], "+", 
+             RowBox[{
+              SuperscriptBox["\[Theta]", "3"], " ", 
+              SuperscriptBox["\[Lambda]", "2"]}]}], ")"}]}], "-", 
+          RowBox[{"\[Theta]", " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", "4"}], "+", 
+             RowBox[{
+              SuperscriptBox["\[Alpha]", "2"], " ", "\[Theta]", " ", 
+              RowBox[{"(", 
+               RowBox[{"1", "+", 
+                RowBox[{
+                 SuperscriptBox[
+                  RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{"-", "1"}], "+", "\[Theta]"}], ")"}], "2"], " ", 
+                 SuperscriptBox["\[Lambda]", "2"]}]}], ")"}]}]}], ")"}]}], 
+          "+", 
+          RowBox[{
+           SuperscriptBox["\[Beta]", "2"], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", "1"}], "-", 
+             RowBox[{
+              SuperscriptBox["\[Theta]", "2"], " ", 
+              SuperscriptBox["\[Lambda]", "2"]}], "+", 
+             RowBox[{"2", " ", 
+              SuperscriptBox["\[Theta]", "3"], " ", 
+              SuperscriptBox["\[Lambda]", "2"]}], "-", 
+             RowBox[{
+              SuperscriptBox["\[Theta]", "4"], " ", 
+              SuperscriptBox["\[Lambda]", "2"]}], "+", 
+             RowBox[{"2", " ", 
+              SuperscriptBox["\[Alpha]", "2"], " ", 
+              SuperscriptBox["\[Theta]", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{"1", "+", 
+                RowBox[{
+                 SuperscriptBox[
+                  RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{"-", "1"}], "+", "\[Theta]"}], ")"}], "2"], " ", 
+                 SuperscriptBox["\[Lambda]", "2"]}]}], ")"}]}]}], ")"}]}], 
+          "+", 
+          RowBox[{"\[Alpha]", " ", "\[Beta]", " ", "\[Theta]", " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", "2"}], "+", 
+             RowBox[{
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "2"}], "+", 
+                SuperscriptBox["\[Alpha]", "2"]}], ")"}], " ", 
+              SuperscriptBox["\[Theta]", "3"], " ", 
+              SuperscriptBox["\[Lambda]", "2"]}], "+", 
+             RowBox[{"\[Theta]", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "4"}], "+", 
+                RowBox[{
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"-", "2"}], "+", 
+                   SuperscriptBox["\[Alpha]", "2"]}], ")"}], " ", 
+                 SuperscriptBox["\[Lambda]", "2"]}]}], ")"}]}], "+", 
+             RowBox[{
+              SuperscriptBox["\[Theta]", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"4", " ", 
+                 SuperscriptBox["\[Lambda]", "2"]}], "+", 
+                RowBox[{
+                 SuperscriptBox["\[Alpha]", "2"], " ", 
+                 RowBox[{"(", 
+                  RowBox[{"1", "-", 
+                   RowBox[{"2", " ", 
+                    SuperscriptBox["\[Lambda]", "2"]}]}], ")"}]}]}], 
+               ")"}]}]}], ")"}]}]}], ")"}]}], ")"}]}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\[Theta]", ",", "0", ",", "1"}], "}"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\[Alpha]", ",", "0", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\[Beta]", ",", "0", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\[Lambda]", ",", "0", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"b", ",", "0", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"c", ",", "0", ",", "1"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8272829178464613`*^9, 3.827282917849811*^9}, {
+  3.8272838346575127`*^9, 3.827283899102529*^9}, {3.827458860146283*^9, 
+  3.82745886649365*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"2830880d-2d3d-4b13-8210-e33623ece2d6"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`b$$ = 0.6, $CellContext`c$$ = 
+    0.4, $CellContext`\[Alpha]$$ = 0.3, $CellContext`\[Beta]$$ = 
+    0.2, $CellContext`\[Lambda]$$ = 1., Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`\[Alpha]$$], 0, 1}, {
+      Hold[$CellContext`\[Beta]$$], 0, 1}, {
+      Hold[$CellContext`\[Lambda]$$], 0, 1}, {
+      Hold[$CellContext`b$$], 0, 1}, {
+      Hold[$CellContext`c$$], 0, 1}}, Typeset`size$$ = {360., {107., 112.}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`\[Alpha]$64608$$ = 0, $CellContext`\[Beta]$64609$$ = 
+    0, $CellContext`\[Lambda]$64610$$ = 0, $CellContext`b$64611$$ = 
+    0, $CellContext`c$64612$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`b$$ = 0, $CellContext`c$$ = 
+        0, $CellContext`\[Alpha]$$ = 0, $CellContext`\[Beta]$$ = 
+        0, $CellContext`\[Lambda]$$ = 0}, "ControllerVariables" :> {
+        Hold[$CellContext`\[Alpha]$$, $CellContext`\[Alpha]$64608$$, 0], 
+        Hold[$CellContext`\[Beta]$$, $CellContext`\[Beta]$64609$$, 0], 
+        Hold[$CellContext`\[Lambda]$$, $CellContext`\[Lambda]$64610$$, 0], 
+        Hold[$CellContext`b$$, $CellContext`b$64611$$, 0], 
+        Hold[$CellContext`c$$, $CellContext`c$64612$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Plot[((-1 + $CellContext`\[Theta]) (((((-$CellContext`\[Alpha]$$) \
+$CellContext`\[Beta]$$^7) (-1 + $CellContext`\[Theta])^2) $CellContext`\
+\[Theta]^4) $CellContext`\[Lambda]$$^2 - ((($CellContext`\[Beta]$$^6 (-1 + \
+$CellContext`\[Theta])) $CellContext`\[Theta]^3) $CellContext`\[Lambda]$$) \
+($CellContext`\[Lambda]$$ + (((
+               4 $CellContext`\[Alpha]$$^2) (-1 + $CellContext`\[Theta])) \
+$CellContext`\[Theta]) $CellContext`\[Lambda]$$ - $CellContext`\[Theta]^2 \
+$CellContext`\[Lambda]$$ + (
+             2 $CellContext`\[Alpha]$$) (-1 + (-1 + $CellContext`\[Theta]) \
+$CellContext`\[Lambda]$$)) + (
+            4 (-1 + (((-2) $CellContext`b$$ + 
+                4 $CellContext`c$$ + $CellContext`\[Alpha]$$ - $CellContext`\
+\[Alpha]$$^2) $CellContext`\[Theta]^2) $CellContext`\[Lambda]$$ + \
+($CellContext`\[Alpha]$$^2 $CellContext`\[Theta]^3) $CellContext`\[Lambda]$$ - \
+$CellContext`\[Theta] (-1 + 
+              2 $CellContext`b$$ + $CellContext`\[Alpha]$$ + (
+                2 $CellContext`c$$) $CellContext`\[Lambda]$$ + $CellContext`\
+\[Alpha]$$ $CellContext`\[Lambda]$$))) (-4 + ($CellContext`\[Alpha]$$^2 \
+$CellContext`\[Theta]) (
+              1 + (-1 + $CellContext`\[Theta])^2 $CellContext`\[Lambda]$$^2)) + \
+((($CellContext`\[Beta]$$^5 (-1 + $CellContext`\[Theta])) $CellContext`\
+\[Theta]^2) $CellContext`\[Lambda]$$) ((($CellContext`\[Alpha]$$^3 \
+$CellContext`\[Theta]^2) (6 - 
+               7 $CellContext`\[Theta] + $CellContext`\[Theta]^2)) \
+$CellContext`\[Lambda]$$ + ((
+               2 $CellContext`\[Alpha]$$^2) $CellContext`\[Theta]) (
+              3 + $CellContext`\[Theta] + 
+              3 $CellContext`\[Lambda]$$ - (
+               3 $CellContext`\[Theta]) $CellContext`\[Lambda]$$ + \
+$CellContext`\[Theta] $CellContext`\[Lambda]$$^2 - (
+               2 $CellContext`\[Theta]^2) $CellContext`\[Lambda]$$^2 + \
+$CellContext`\[Theta]^3 $CellContext`\[Lambda]$$^2) - 
+            2 (1 + $CellContext`\[Lambda]$$ + $CellContext`\[Theta]^3 \
+$CellContext`\[Lambda]$$^2 - ($CellContext`\[Theta]^2 \
+$CellContext`\[Lambda]$$) (1 + 
+              2 $CellContext`\[Lambda]$$) + $CellContext`\[Theta] (
+               2 + $CellContext`\[Lambda]$$^2)) + $CellContext`\[Alpha]$$ (
+              2 + $CellContext`\[Theta]^4 $CellContext`\[Lambda]$$^3 + \
+($CellContext`\[Theta]^3 $CellContext`\[Lambda]$$) (2 - 
+                4 $CellContext`\[Lambda]$$ - 
+                
+                3 $CellContext`\[Lambda]$$^2) + ($CellContext`\[Theta]^2 \
+$CellContext`\[Lambda]$$) (3 + 4 $CellContext`b$$ - 8 $CellContext`c$$ + 
+                8 $CellContext`\[Lambda]$$ + 
+                3 $CellContext`\[Lambda]$$^2) + $CellContext`\[Theta] (-4 + 
+                4 $CellContext`b$$ - 
+                5 $CellContext`\[Lambda]$$ + (
+                  4 $CellContext`c$$) $CellContext`\[Lambda]$$ - 
+                4 $CellContext`\[Lambda]$$^2 - $CellContext`\[Lambda]$$^3))) + \
+((2 $CellContext`\[Beta]$$^4) $CellContext`\[Theta]) \
+($CellContext`\[Lambda]$$ + (((
+                2 $CellContext`\[Alpha]$$^2) $CellContext`\[Theta]^6) \
+$CellContext`\[Lambda]$$^2) ($CellContext`\[Alpha]$$ + \
+$CellContext`\[Lambda]$$)^2 + $CellContext`\[Theta] (
+              2 + $CellContext`\[Lambda]$$ + (
+                2 $CellContext`b$$) $CellContext`\[Lambda]$$ - (
+               2 $CellContext`\[Alpha]$$^2) $CellContext`\[Lambda]$$ + (
+                2 (1 + $CellContext`c$$)) $CellContext`\[Lambda]$$^2 + \
+$CellContext`\[Lambda]$$^3 + ($CellContext`\[Alpha]$$ (
+                 1 + $CellContext`\[Lambda]$$)) (2 - 2 $CellContext`b$$ + 
+                3 $CellContext`\[Lambda]$$ - (
+                 2 $CellContext`c$$) $CellContext`\[Lambda]$$ + 
+                2 $CellContext`\[Lambda]$$^2)) - ($CellContext`\[Theta]^5 \
+$CellContext`\[Lambda]$$^2) (6 $CellContext`\[Alpha]$$^4 - 
+             2 $CellContext`\[Lambda]$$ + (
+               4 $CellContext`\[Alpha]$$) $CellContext`\[Lambda]$$ + \
+$CellContext`\[Alpha]$$^3 (-1 + 
+               12 $CellContext`\[Lambda]$$) + $CellContext`\[Alpha]$$^2 (1 + 
+               7 $CellContext`\[Lambda]$$ + 
+               8 $CellContext`\[Lambda]$$^2)) + ($CellContext`\[Theta]^4 \
+$CellContext`\[Lambda]$$) ((
+                6 $CellContext`\[Alpha]$$^4) $CellContext`\[Lambda]$$ + ((-2) \
+$CellContext`b$$ + 4 $CellContext`c$$ - 
+                7 $CellContext`\[Lambda]$$) $CellContext`\[Lambda]$$ + \
+($CellContext`\[Alpha]$$ $CellContext`\[Lambda]$$) (1 + 
+                10 $CellContext`\[Lambda]$$) + $CellContext`\[Alpha]$$^3 (3 - 
+                5 $CellContext`\[Lambda]$$ + 
+                12 $CellContext`\[Lambda]$$^2) + ($CellContext`\[Alpha]$$^2 \
+$CellContext`\[Lambda]$$) (7 + 4 $CellContext`b$$ - 8 $CellContext`c$$ + 
+                21 $CellContext`\[Lambda]$$ + 
+                12 $CellContext`\[Lambda]$$^2)) - ($CellContext`\[Theta]^3 \
+$CellContext`\[Lambda]$$) (-2 - 
+             2 $CellContext`\[Lambda]$$ + (
+               2 $CellContext`c$$) $CellContext`\[Lambda]$$ + (
+               2 $CellContext`\[Alpha]$$^4) $CellContext`\[Lambda]$$ - 
+             9 $CellContext`\[Lambda]$$^2 + ($CellContext`\[Alpha]$$^3 \
+$CellContext`\[Lambda]$$) (-7 + 
+               4 $CellContext`\[Lambda]$$) + $CellContext`b$$ (
+               2 + (4 $CellContext`\[Alpha]$$^2) (-1 + \
+$CellContext`\[Lambda]$$) - (
+                2 $CellContext`\[Alpha]$$) $CellContext`\[Lambda]$$) + \
+$CellContext`\[Alpha]$$ (5 - 
+               3 $CellContext`\[Lambda]$$ + (
+                 4 $CellContext`c$$) $CellContext`\[Lambda]$$ + 
+               6 $CellContext`\[Lambda]$$^2) + $CellContext`\[Alpha]$$^2 (7 + 
+               11 $CellContext`\[Lambda]$$ - (
+                12 $CellContext`c$$) $CellContext`\[Lambda]$$ + 
+               21 $CellContext`\[Lambda]$$^2 + 
+               8 $CellContext`\[Lambda]$$^3)) + ($CellContext`\[Theta]^2 \
+$CellContext`\[Lambda]$$) (-4 - 
+              4 $CellContext`\[Lambda]$$ + (
+                2 $CellContext`b$$) $CellContext`\[Lambda]$$ - 
+              5 $CellContext`\[Lambda]$$^2 - (3 $CellContext`\[Alpha]$$^3) (
+               1 + $CellContext`\[Lambda]$$) - ($CellContext`\[Alpha]$$ \
+$CellContext`\[Lambda]$$) (9 + 2 $CellContext`b$$ + 
+               2 $CellContext`\[Lambda]$$) + $CellContext`\[Alpha]$$^2 (9 - 
+                4 $CellContext`b$$ + 5 $CellContext`\[Lambda]$$ + 
+                7 $CellContext`\[Lambda]$$^2 + 
+                2 $CellContext`\[Lambda]$$^3) + $CellContext`c$$ ((-4) \
+$CellContext`\[Lambda]$$ - (
+                 4 $CellContext`\[Alpha]$$^2) $CellContext`\[Lambda]$$ + \
+$CellContext`\[Alpha]$$ (4 + 
+                  6 $CellContext`\[Lambda]$$)))) + ($CellContext`\[Beta]$$^3 \
+$CellContext`\[Theta]) ((((
+                6 $CellContext`\[Alpha]$$^3) $CellContext`\[Theta]^6) \
+$CellContext`\[Lambda]$$^2) ($CellContext`\[Alpha]$$ + \
+$CellContext`\[Lambda]$$)^2 - ((
+              4 $CellContext`\[Alpha]$$) $CellContext`\[Theta]) \
+($CellContext`b$$ + ($CellContext`b$$ $CellContext`\[Theta]) $CellContext`\
+\[Lambda]$$)^2 + 
+            4 (1 + $CellContext`\[Lambda]$$^2 + ($CellContext`c$$ \
+$CellContext`\[Lambda]$$) (
+                1 + $CellContext`\[Lambda]$$) + ($CellContext`\[Alpha]$$ \
+$CellContext`\[Lambda]$$) (1 + $CellContext`\[Lambda]$$)) + ((
+               2 $CellContext`\[Theta]^4) $CellContext`\[Lambda]$$) ((
+                4 $CellContext`\[Alpha]$$^5) $CellContext`\[Lambda]$$ + (
+                2 (1 - 2 $CellContext`c$$)) $CellContext`\[Lambda]$$^2 - ((27 + 
+                8 $CellContext`c$$) $CellContext`\[Alpha]$$) $CellContext`\
+\[Lambda]$$^2 - ($CellContext`\[Alpha]$$^2 $CellContext`\[Lambda]$$) (
+               1 + (2 (-6 + 
+                  5 $CellContext`c$$)) $CellContext`\[Lambda]$$) + \
+$CellContext`\[Alpha]$$^4 (3 - 7 $CellContext`\[Lambda]$$ + 
+                18 $CellContext`\[Lambda]$$^2) + ($CellContext`\[Alpha]$$^3 \
+$CellContext`\[Lambda]$$) (13 - 10 $CellContext`c$$ + 
+                27 $CellContext`\[Lambda]$$ + 
+                18 $CellContext`\[Lambda]$$^2)) - (($CellContext`\[Alpha]$$ \
+$CellContext`\[Theta]^5) $CellContext`\[Lambda]$$^2) (
+             13 $CellContext`\[Alpha]$$^4 - 
+             16 $CellContext`\[Lambda]$$ + ((
+                4 (3 - 2 $CellContext`c$$)) $CellContext`\[Alpha]$$) \
+$CellContext`\[Lambda]$$ + (6 $CellContext`\[Alpha]$$^3) (-1 + 
+               6 $CellContext`\[Lambda]$$) + $CellContext`\[Alpha]$$^2 (8 - 
+               8 $CellContext`c$$ + 18 $CellContext`\[Lambda]$$ + 
+               24 $CellContext`\[Lambda]$$^2)) - (2 $CellContext`\[Theta]) (4 + 
+             6 $CellContext`\[Lambda]$$ + $CellContext`\[Alpha]$$^3 \
+$CellContext`\[Lambda]$$ + (
+               4 (2 + $CellContext`c$$)) $CellContext`\[Lambda]$$^2 - (
+              2 (-1 + $CellContext`c$$)) $CellContext`\[Lambda]$$^3 - \
+$CellContext`\[Alpha]$$^2 (
+              4 + (9 - 2 $CellContext`c$$) $CellContext`\[Lambda]$$ + (7 - 
+                2 $CellContext`c$$) $CellContext`\[Lambda]$$^2 + 
+              6 $CellContext`\[Lambda]$$^3) + ($CellContext`\[Alpha]$$ \
+$CellContext`\[Lambda]$$) (7 + 
+               6 $CellContext`\[Lambda]$$ + (
+                 2 $CellContext`c$$^2) $CellContext`\[Lambda]$$ - 
+               3 $CellContext`\[Lambda]$$^2 - (4 $CellContext`c$$) (
+                1 + $CellContext`\[Lambda]$$ + $CellContext`\[Lambda]$$^2))) - \
+((4 $CellContext`b$$) (
+              1 + $CellContext`\[Theta] $CellContext`\[Lambda]$$)) (-1 - \
+$CellContext`\[Lambda]$$ + (($CellContext`\[Alpha]$$^2 \
+$CellContext`\[Theta]^4) $CellContext`\[Lambda]$$) ($CellContext`\[Alpha]$$ + \
+$CellContext`\[Lambda]$$) - ($CellContext`\[Theta]^3 \
+$CellContext`\[Lambda]$$) (
+              2 $CellContext`\[Alpha]$$^3 + $CellContext`\[Lambda]$$ + (
+                2 $CellContext`\[Alpha]$$) $CellContext`\[Lambda]$$ + (
+                2 $CellContext`\[Alpha]$$^2) $CellContext`\[Lambda]$$) + \
+$CellContext`\[Theta]^2 ($CellContext`\[Alpha]$$^3 $CellContext`\[Lambda]$$ + \
+$CellContext`\[Lambda]$$ (1 + 
+                 2 $CellContext`\[Lambda]$$) + ((
+                  2 $CellContext`\[Alpha]$$) $CellContext`\[Lambda]$$) (1 - 
+                 2 $CellContext`c$$ + 
+                 2 $CellContext`\[Lambda]$$) + $CellContext`\[Alpha]$$^2 (
+                 1 - $CellContext`\[Lambda]$$ + $CellContext`\[Lambda]$$^2)) + \
+$CellContext`\[Theta] (-2 - $CellContext`\[Lambda]$$^2 + \
+$CellContext`\[Alpha]$$^2 (1 + $CellContext`\[Lambda]$$) - (
+                2 $CellContext`\[Alpha]$$) (
+                1 + $CellContext`\[Lambda]$$ - $CellContext`c$$ $CellContext`\
+\[Lambda]$$ + $CellContext`\[Lambda]$$^2))) - (
+             2 $CellContext`\[Theta]^2) (($CellContext`\[Alpha]$$^4 \
+$CellContext`\[Lambda]$$) (
+               1 + $CellContext`\[Lambda]$$) - ($CellContext`\[Alpha]$$^3 \
+$CellContext`\[Lambda]$$) (
+              11 + (5 - 2 $CellContext`c$$) $CellContext`\[Lambda]$$ + 
+              9 $CellContext`\[Lambda]$$^2 + 
+              3 $CellContext`\[Lambda]$$^3) + $CellContext`\[Alpha]$$^2 (-2 - \
+(2 (-1 + $CellContext`c$$)) $CellContext`\[Lambda]$$ + (15 - 
+                 6 $CellContext`c$$) $CellContext`\[Lambda]$$^2 + (
+                 2 (6 + $CellContext`c$$)) $CellContext`\[Lambda]$$^3) + (
+               2 $CellContext`\[Lambda]$$) (-3 - 5 $CellContext`\[Lambda]$$ - 
+               3 $CellContext`\[Lambda]$$^2 + $CellContext`c$$ (
+                 4 + $CellContext`\[Lambda]$$ + 
+                 4 $CellContext`\[Lambda]$$^2)) + ($CellContext`\[Alpha]$$ \
+$CellContext`\[Lambda]$$) (3 - 
+               6 $CellContext`\[Lambda]$$ - (
+                8 $CellContext`c$$^2) $CellContext`\[Lambda]$$ + 
+               17 $CellContext`\[Lambda]$$^2 + (4 $CellContext`c$$) (2 + 
+                 3 $CellContext`\[Lambda]$$ + 
+                 4 $CellContext`\[Lambda]$$^2))) - ($CellContext`\[Theta]^3 \
+$CellContext`\[Lambda]$$) ($CellContext`\[Alpha]$$^5 $CellContext`\[Lambda]$$ + \
+(2 $CellContext`\[Alpha]$$^4) (2 - 5 $CellContext`\[Lambda]$$ + 
+               6 $CellContext`\[Lambda]$$^2) - (2 $CellContext`\[Alpha]$$) (
+              8 - (2 (1 - 2 $CellContext`c$$)^2) $CellContext`\[Lambda]$$ + (
+                33 + 20 $CellContext`c$$) $CellContext`\[Lambda]$$^2) + (
+               2 $CellContext`\[Alpha]$$^3) (
+               10 + (14 - 8 $CellContext`c$$) $CellContext`\[Lambda]$$ + 
+               27 $CellContext`\[Lambda]$$^2 + 
+               12 $CellContext`\[Lambda]$$^3) + (4 $CellContext`\[Lambda]$$) (
+               2 + 3 $CellContext`\[Lambda]$$ - $CellContext`c$$ (2 + 
+                5 $CellContext`\[Lambda]$$)) - (
+              2 $CellContext`\[Alpha]$$^2) (-7 + 
+              9 $CellContext`\[Lambda]$$ + $CellContext`c$$ (4 - 
+                4 $CellContext`\[Lambda]$$ + 
+                8 $CellContext`\[Lambda]$$^2)))) + $CellContext`\[Beta]$$^2 (
+            4 + (((4 $CellContext`\[Alpha]$$^4) $CellContext`\[Theta]^7) \
+$CellContext`\[Lambda]$$^2) ($CellContext`\[Alpha]$$ + \
+$CellContext`\[Lambda]$$)^2 - (($CellContext`\[Alpha]$$^2 $CellContext`\
+\[Theta]^6) $CellContext`\[Lambda]$$^2) (8 $CellContext`\[Alpha]$$^4 - 
+             24 $CellContext`\[Lambda]$$ + ((
+                8 (1 + $CellContext`b$$ - 
+                 2 $CellContext`c$$)) $CellContext`\[Alpha]$$) $CellContext`\
+\[Lambda]$$ + (6 $CellContext`\[Alpha]$$^3) (-1 + 
+               4 $CellContext`\[Lambda]$$) + $CellContext`\[Alpha]$$^2 (7 + 
+               8 $CellContext`b$$ - 16 $CellContext`c$$ + 
+               10 $CellContext`\[Lambda]$$ + 
+               16 $CellContext`\[Lambda]$$^2)) + (
+              2 $CellContext`\[Theta]) (-8 + 2 $CellContext`b$$^2 - 
+              4 $CellContext`\[Lambda]$$ - 
+              2 $CellContext`\[Lambda]$$^2 + (
+                2 $CellContext`c$$^2) $CellContext`\[Lambda]$$^2 + (
+                2 $CellContext`b$$) ($CellContext`\[Alpha]$$ + (
+                  2 $CellContext`c$$) $CellContext`\[Lambda]$$ + \
+$CellContext`\[Alpha]$$ $CellContext`\[Lambda]$$) + $CellContext`\[Alpha]$$^2 \
+(4 + $CellContext`\[Lambda]$$ + 4 $CellContext`\[Lambda]$$^2) + (
+                2 $CellContext`\[Alpha]$$) (-2 + (-4 + $CellContext`c$$) \
+$CellContext`\[Lambda]$$ + (
+                  2 + $CellContext`c$$) $CellContext`\[Lambda]$$^2)) + \
+($CellContext`\[Theta]^5 $CellContext`\[Lambda]$$) ((
+                4 $CellContext`\[Alpha]$$^6) $CellContext`\[Lambda]$$ + (
+                16 $CellContext`c$$) $CellContext`\[Lambda]$$^2 - ((
+                4 (-3 + 
+                 4 $CellContext`c$$)) $CellContext`\[Alpha]$$) $CellContext`\
+\[Lambda]$$^2 + (2 $CellContext`\[Alpha]$$^5) (1 - 6 $CellContext`\[Lambda]$$ + 
+                12 $CellContext`\[Lambda]$$^2) + ($CellContext`\[Alpha]$$^4 \
+$CellContext`\[Lambda]$$) (19 - 24 $CellContext`c$$ + 
+                30 $CellContext`\[Lambda]$$ + 
+                24 $CellContext`\[Lambda]$$^2) - ((
+                2 $CellContext`\[Alpha]$$^2) $CellContext`\[Lambda]$$) (
+               39 $CellContext`\[Lambda]$$ + (4 $CellContext`c$$) (3 + 
+                 4 $CellContext`\[Lambda]$$)) + (
+                4 $CellContext`b$$) ((
+                  2 $CellContext`\[Alpha]$$^4) (-1 + \
+$CellContext`\[Lambda]$$) - 
+                2 $CellContext`\[Lambda]$$^2 + (
+                  2 $CellContext`\[Alpha]$$) $CellContext`\[Lambda]$$^2 + \
+($CellContext`\[Alpha]$$^3 $CellContext`\[Lambda]$$) (-3 + 
+                  4 $CellContext`\[Lambda]$$) + ($CellContext`\[Alpha]$$^2 \
+$CellContext`\[Lambda]$$) (3 + 4 $CellContext`\[Lambda]$$)) - ((
+                2 $CellContext`\[Alpha]$$^3) $CellContext`\[Lambda]$$) (1 - 
+               6 $CellContext`\[Lambda]$$ + (4 $CellContext`c$$) (-1 + 
+                 5 $CellContext`\[Lambda]$$))) + (2 $CellContext`\[Theta]^2) (
+              2 + 12 $CellContext`\[Lambda]$$ - (
+               4 $CellContext`c$$) $CellContext`\[Lambda]$$ + 
+              6 $CellContext`\[Lambda]$$^2 - (
+               6 $CellContext`c$$^2) $CellContext`\[Lambda]$$^2 - (
+               4 $CellContext`c$$) $CellContext`\[Lambda]$$^3 + \
+$CellContext`b$$^2 (2 + 
+                4 $CellContext`\[Lambda]$$) + $CellContext`\[Alpha]$$^3 (2 + 
+                7 $CellContext`\[Lambda]$$ + 3 $CellContext`\[Lambda]$$^2 + 
+                6 $CellContext`\[Lambda]$$^3) + (
+                2 $CellContext`\[Alpha]$$) (-5 - (
+                 3 + $CellContext`c$$) $CellContext`\[Lambda]$$ - (9 + 
+                 4 $CellContext`c$$) $CellContext`\[Lambda]$$^2 + (-3 + 
+                  2 $CellContext`c$$) $CellContext`\[Lambda]$$^3) + \
+$CellContext`\[Alpha]$$^2 (-6 + (-13 + 
+                  8 $CellContext`c$$) $CellContext`\[Lambda]$$ + (
+                  2 (-9 + $CellContext`c$$)) $CellContext`\[Lambda]$$^2 + (3 + 
+                  8 $CellContext`c$$) $CellContext`\[Lambda]$$^3) + (
+                2 $CellContext`b$$) (((
+                   2 $CellContext`c$$) (-1 + $CellContext`\[Lambda]$$)) \
+$CellContext`\[Lambda]$$ - 
+                2 (1 + $CellContext`\[Lambda]$$^2) + $CellContext`\[Alpha]$$ (
+                  1 - $CellContext`\[Lambda]$$ + 
+                  3 $CellContext`\[Lambda]$$^2) + $CellContext`\[Alpha]$$^2 (
+                  4 + $CellContext`\[Lambda]$$ + 
+                  4 $CellContext`\[Lambda]$$^2))) + ($CellContext`\[Theta]^4 \
+$CellContext`\[Lambda]$$) ($CellContext`\[Alpha]$$^5 (-2 + 
+                6 $CellContext`\[Lambda]$$ - 
+                8 $CellContext`\[Lambda]$$^2) + $CellContext`\[Alpha]$$^4 \
+(-14 + 8 $CellContext`b$$ + (-17 + 
+                  8 $CellContext`c$$) $CellContext`\[Lambda]$$ - 
+                30 $CellContext`\[Lambda]$$^2 - 
+                16 $CellContext`\[Lambda]$$^3) - ((
+                4 $CellContext`\[Alpha]$$) $CellContext`\[Lambda]$$) (
+               5 + $CellContext`c$$ (2 - 10 $CellContext`\[Lambda]$$) + 
+               9 $CellContext`\[Lambda]$$ + $CellContext`b$$ (-3 + 
+                 4 $CellContext`\[Lambda]$$)) + (4 $CellContext`\[Lambda]$$) (
+                1 + $CellContext`b$$^2 + 
+                4 $CellContext`c$$^2 - (
+                 10 $CellContext`c$$) $CellContext`\[Lambda]$$ + \
+$CellContext`b$$ (-2 - 4 $CellContext`c$$ + 4 $CellContext`\[Lambda]$$)) + (
+                2 $CellContext`\[Alpha]$$^2) (
+                12 + (2 (-5 + 
+                   11 $CellContext`c$$)) $CellContext`\[Lambda]$$ + (
+                  5 (9 + 8 $CellContext`c$$)) $CellContext`\[Lambda]$$^2 + \
+$CellContext`b$$ (6 - 16 $CellContext`\[Lambda]$$^2)) + (
+                2 $CellContext`\[Alpha]$$^3) (-7 + 5 $CellContext`\[Lambda]$$ + 
+                6 $CellContext`\[Lambda]$$^2 - (2 $CellContext`b$$) (2 - 
+                 5 $CellContext`\[Lambda]$$ + 
+                 2 $CellContext`\[Lambda]$$^2) + (2 $CellContext`c$$) (2 - 
+                  3 $CellContext`\[Lambda]$$ + 
+                  8 $CellContext`\[Lambda]$$^2))) + $CellContext`\[Theta]^3 \
+(($CellContext`\[Alpha]$$^4 $CellContext`\[Lambda]$$) (14 + 
+                5 $CellContext`\[Lambda]$$ + 10 $CellContext`\[Lambda]$$^2 + 
+                4 $CellContext`\[Lambda]$$^3) + ((
+                 4 $CellContext`\[Alpha]$$) $CellContext`\[Lambda]$$) (7 + 
+                12 $CellContext`\[Lambda]$$ + 
+                9 $CellContext`\[Lambda]$$^2 + $CellContext`c$$ (-2 + 
+                  5 $CellContext`\[Lambda]$$ - 
+                  8 $CellContext`\[Lambda]$$^2) + (2 $CellContext`b$$) (1 - 
+                  3 $CellContext`\[Lambda]$$ + $CellContext`\[Lambda]$$^2)) - \
+(2 $CellContext`\[Alpha]$$^3) (-4 + 7 $CellContext`\[Lambda]$$^2 + 
+               14 $CellContext`\[Lambda]$$^3 + ((
+                  2 $CellContext`c$$) $CellContext`\[Lambda]$$) (
+                 1 - $CellContext`\[Lambda]$$ + 
+                 2 $CellContext`\[Lambda]$$^2) + $CellContext`b$$ (2 - 
+                 2 $CellContext`\[Lambda]$$ + 
+                 4 $CellContext`\[Lambda]$$^2)) - ((
+                2 $CellContext`\[Alpha]$$^2) $CellContext`\[Lambda]$$) \
+($CellContext`\[Lambda]$$ (-24 + 14 $CellContext`b$$ + 
+                 21 $CellContext`\[Lambda]$$ - (
+                  8 $CellContext`b$$) $CellContext`\[Lambda]$$) + (
+                 4 $CellContext`c$$) (4 + 3 $CellContext`\[Lambda]$$ + 
+                 8 $CellContext`\[Lambda]$$^2)) + (
+                4 $CellContext`\[Lambda]$$) (-4 - 
+                3 $CellContext`\[Lambda]$$ + $CellContext`b$$^2 (
+                  2 + $CellContext`\[Lambda]$$) + $CellContext`c$$ (4 + 
+                  8 $CellContext`\[Lambda]$$^2) - (
+                 2 $CellContext`b$$) ((-1 + $CellContext`\[Lambda]$$)^2 + \
+$CellContext`c$$ (
+                   2 + $CellContext`\[Lambda]$$))))) + $CellContext`\[Beta]$$ \
+((($CellContext`\[Alpha]$$^7 (-1 + $CellContext`\[Theta])^2) $CellContext`\
+\[Theta]^5) $CellContext`\[Lambda]$$^2 + ((((
+                 2 $CellContext`\[Alpha]$$^6) (-1 + $CellContext`\[Theta])^2) \
+$CellContext`\[Theta]^4) $CellContext`\[Lambda]$$^2) (
+              1 + (-1 + $CellContext`\[Theta]) $CellContext`\[Lambda]$$) - 
+            16 (1 + ((1 + $CellContext`b$$ - 
+                2 $CellContext`c$$) $CellContext`\[Theta]^2) $CellContext`\
+\[Lambda]$$ + $CellContext`\[Theta] (-2 + $CellContext`b$$ + (-1 + \
+$CellContext`c$$) $CellContext`\[Lambda]$$)) + ((($CellContext`\[Alpha]$$^5 \
+(-1 + $CellContext`\[Theta])) $CellContext`\[Theta]^3) \
+$CellContext`\[Lambda]$$) (-4 + ((-1 + 2 $CellContext`\[Theta]) (
+                 1 - $CellContext`\[Theta] + (
+                   4 $CellContext`c$$) $CellContext`\[Theta])) $CellContext`\
+\[Lambda]$$ - (
+               2 (-1 + $CellContext`\[Theta])^2) $CellContext`\[Lambda]$$^2 + \
+(-1 + $CellContext`\[Theta])^3 $CellContext`\[Lambda]$$^3 - ((
+                4 $CellContext`b$$) $CellContext`\[Theta]) (
+               1 + $CellContext`\[Theta] $CellContext`\[Lambda]$$)) - ((
+              2 $CellContext`\[Alpha]$$^4) $CellContext`\[Theta]^2) (((1 + 
+                2 $CellContext`b$$ - 
+                4 $CellContext`c$$) $CellContext`\[Theta]^4) $CellContext`\
+\[Lambda]$$^3 - ($CellContext`\[Theta]^3 $CellContext`\[Lambda]$$^2) \
+($CellContext`c$$ (4 - 10 $CellContext`\[Lambda]$$) + (
+                4 $CellContext`b$$) (-1 + $CellContext`\[Lambda]$$) + \
+$CellContext`\[Lambda]$$) - 
+             2 ($CellContext`\[Lambda]$$ + $CellContext`\[Lambda]$$^3) + \
+$CellContext`\[Theta] (-2 - (1 + 
+                2 $CellContext`b$$) $CellContext`\[Lambda]$$ + (
+                 2 ($CellContext`b$$ - $CellContext`c$$)) $CellContext`\
+\[Lambda]$$^2 + (5 + 
+                 2 $CellContext`c$$) $CellContext`\[Lambda]$$^3) + \
+($CellContext`\[Theta]^2 $CellContext`\[Lambda]$$) (
+               3 + ((2 $CellContext`c$$) (3 - 
+                  4 $CellContext`\[Lambda]$$)) $CellContext`\[Lambda]$$ - 
+               3 $CellContext`\[Lambda]$$^2 + (2 $CellContext`b$$) (1 - 
+                 3 $CellContext`\[Lambda]$$ + $CellContext`\[Lambda]$$^2))) + \
+((4 $CellContext`\[Alpha]$$^2) $CellContext`\[Theta]) (1 - 
+              4 $CellContext`\[Lambda]$$ + $CellContext`\[Lambda]$$^2 + ((
+                 3 + $CellContext`b$$ - 
+                 2 $CellContext`c$$) $CellContext`\[Theta]^4) $CellContext`\
+\[Lambda]$$^3 + ($CellContext`\[Theta]^3 $CellContext`\[Lambda]$$^2) (-4 + \
+$CellContext`b$$ (3 - 2 $CellContext`\[Lambda]$$) - 
+                9 $CellContext`\[Lambda]$$ + $CellContext`c$$ (-4 + 
+                  5 $CellContext`\[Lambda]$$)) + ($CellContext`\[Theta]^2 \
+$CellContext`\[Lambda]$$) (5 + 9 $CellContext`\[Lambda]$$ + 
+                9 $CellContext`\[Lambda]$$^2 + $CellContext`c$$ (-6 + 
+                  6 $CellContext`\[Lambda]$$ - 
+                  4 $CellContext`\[Lambda]$$^2) + $CellContext`b$$ (5 - 
+                  4 $CellContext`\[Lambda]$$ + $CellContext`\[Lambda]$$^2)) + \
+$CellContext`\[Theta] (-8 + (-1 + 
+                  3 $CellContext`c$$) $CellContext`\[Lambda]$$ - (
+                 2 (3 + $CellContext`c$$)) $CellContext`\[Lambda]$$^2 + (-3 + \
+$CellContext`c$$) $CellContext`\[Lambda]$$^3 + $CellContext`b$$ (3 - 
+                  2 $CellContext`\[Lambda]$$ + $CellContext`\[Lambda]$$^2))) - \
+(8 $CellContext`\[Alpha]$$) (
+             2 + ((2 ($CellContext`b$$ - 
+                 2 $CellContext`c$$)) $CellContext`\[Theta]^5) $CellContext`\
+\[Lambda]$$^3 + ($CellContext`\[Theta]^4 $CellContext`\[Lambda]$$^2) (-1 + \
+$CellContext`b$$^2 + 
+               4 $CellContext`c$$^2 + $CellContext`b$$ (2 - 
+                 4 $CellContext`c$$ - 4 $CellContext`\[Lambda]$$) + (
+                 10 $CellContext`c$$) $CellContext`\[Lambda]$$) + \
+$CellContext`\[Theta] (-2 + 
+               4 $CellContext`b$$ + $CellContext`\[Lambda]$$ + (
+                 4 $CellContext`c$$) $CellContext`\[Lambda]$$ + $CellContext`\
+\[Lambda]$$^2) + $CellContext`\[Theta]^2 (-1 + $CellContext`b$$^2 - (5 + 
+                6 $CellContext`c$$) $CellContext`\[Lambda]$$ + (-3 + \
+$CellContext`c$$^2) $CellContext`\[Lambda]$$^2 + (
+                 2 $CellContext`c$$) $CellContext`\[Lambda]$$^3 + (
+                 2 $CellContext`b$$) (
+                 1 + (2 + $CellContext`c$$) $CellContext`\[Lambda]$$ + \
+$CellContext`\[Lambda]$$^2)) + ($CellContext`\[Theta]^3 \
+$CellContext`\[Lambda]$$) (4 + 
+               2 $CellContext`b$$^2 + (
+                 2 $CellContext`b$$) ($CellContext`c$$ (-2 + $CellContext`\
+\[Lambda]$$) + (-1 + $CellContext`\[Lambda]$$)^2) + 
+               3 $CellContext`\[Lambda]$$ - (
+                4 $CellContext`c$$^2) $CellContext`\[Lambda]$$ - (
+                4 $CellContext`c$$) (1 + 2 $CellContext`\[Lambda]$$^2))) + ((
+               2 $CellContext`\[Alpha]$$^3) $CellContext`\[Theta]) ((
+                8 $CellContext`\[Theta]^5) $CellContext`\[Lambda]$$^3 + 
+              2 (1 + $CellContext`\[Lambda]$$^2) + ($CellContext`\[Theta]^4 \
+$CellContext`\[Lambda]$$^2) (2 $CellContext`b$$^2 + 8 $CellContext`c$$^2 - 
+                25 $CellContext`\[Lambda]$$ - (8 $CellContext`c$$) (
+                 1 + $CellContext`\[Lambda]$$) + $CellContext`b$$ (4 - 
+                  8 $CellContext`c$$ + 
+                  4 $CellContext`\[Lambda]$$)) + ($CellContext`\[Theta]^3 \
+$CellContext`\[Lambda]$$) (8 + 
+                4 $CellContext`b$$^2 - (
+                 2 (3 - 6 $CellContext`c$$ + 
+                  4 $CellContext`c$$^2)) $CellContext`\[Lambda]$$ + (27 + 
+                  20 $CellContext`c$$) $CellContext`\[Lambda]$$^2 + (
+                  4 $CellContext`b$$) (
+                  1 + $CellContext`c$$ (-2 + $CellContext`\[Lambda]$$) - 
+                  2 $CellContext`\[Lambda]$$^2)) + $CellContext`\[Theta] (-2 + \
+(-5 + 4 $CellContext`c$$) $CellContext`\[Lambda]$$ - 
+                10 $CellContext`\[Lambda]$$^2 + (1 + 
+                  4 $CellContext`c$$) $CellContext`\[Lambda]$$^3 + (
+                  4 $CellContext`b$$) (
+                  1 + $CellContext`\[Lambda]$$^2)) + $CellContext`\[Theta]^2 (
+                2 $CellContext`b$$^2 + ((
+                   4 $CellContext`b$$) $CellContext`\[Lambda]$$) \
+($CellContext`c$$ + (-2 + $CellContext`\[Lambda]$$) $CellContext`\[Lambda]$$) - \
+$CellContext`\[Lambda]$$ (3 - 
+                 14 $CellContext`\[Lambda]$$ - (
+                  2 $CellContext`c$$^2) $CellContext`\[Lambda]$$ + 
+                 11 $CellContext`\[Lambda]$$^2 + (4 $CellContext`c$$) (
+                   2 + $CellContext`\[Lambda]$$ + 
+                   4 $CellContext`\[Lambda]$$^2)))))))/((
+         4 (-4 + ($CellContext`\[Alpha]$$^2 $CellContext`\[Theta]) (
+            1 + (-1 + $CellContext`\[Theta])^2 $CellContext`\[Lambda]$$^2) + \
+(((2 $CellContext`\[Alpha]$$) $CellContext`\[Beta]$$) $CellContext`\[Theta]) (
+            1 + (-1 + $CellContext`\[Theta])^2 $CellContext`\[Lambda]$$^2) + \
+($CellContext`\[Beta]$$^2 $CellContext`\[Theta]) (
+            1 + (-1 + $CellContext`\[Theta])^2 $CellContext`\[Lambda]$$^2))) \
+((($CellContext`\[Alpha]$$ $CellContext`\[Beta]$$^3) $CellContext`\[Theta]) (
+           1 + $CellContext`\[Theta] $CellContext`\[Lambda]$$^2 - (
+            2 $CellContext`\[Theta]^2) $CellContext`\[Lambda]$$^2 + \
+$CellContext`\[Theta]^3 $CellContext`\[Lambda]$$^2) - $CellContext`\[Theta] \
+(-4 + ($CellContext`\[Alpha]$$^2 $CellContext`\[Theta]) (
+            1 + (-1 + $CellContext`\[Theta])^2 $CellContext`\[Lambda]$$^2)) + \
+$CellContext`\[Beta]$$^2 (-1 - $CellContext`\[Theta]^2 \
+$CellContext`\[Lambda]$$^2 + (
+             2 $CellContext`\[Theta]^3) $CellContext`\[Lambda]$$^2 - \
+$CellContext`\[Theta]^4 $CellContext`\[Lambda]$$^2 + ((
+              2 $CellContext`\[Alpha]$$^2) $CellContext`\[Theta]^2) (
+             1 + (-1 + $CellContext`\[Theta])^2 $CellContext`\[Lambda]$$^2)) + \
+(($CellContext`\[Alpha]$$ $CellContext`\[Beta]$$) $CellContext`\[Theta]) (-2 + (\
+(-2 + $CellContext`\[Alpha]$$^2) $CellContext`\[Theta]^3) $CellContext`\
+\[Lambda]$$^2 + $CellContext`\[Theta] (-4 + (-2 + $CellContext`\[Alpha]$$^2) \
+$CellContext`\[Lambda]$$^2) + $CellContext`\[Theta]^2 (
+             4 $CellContext`\[Lambda]$$^2 + $CellContext`\[Alpha]$$^2 (1 - 
+               2 $CellContext`\[Lambda]$$^2))))), {$CellContext`\[Theta], 0, 
+         1}], "Specifications" :> {{$CellContext`\[Alpha]$$, 0, 
+         1}, {$CellContext`\[Beta]$$, 0, 1}, {$CellContext`\[Lambda]$$, 0, 
+         1}, {$CellContext`b$$, 0, 1}, {$CellContext`c$$, 0, 1}}, 
+      "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{405., {208., 214.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Input",
+ CellChangeTimes->{{3.827458909070107*^9, 3.8274589202987347`*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"f828a5e3-e613-4f5f-a84f-c3bcc570fe15"]
+},
+WindowSize->{759, 1100},
+WindowMargins->{{534, Automatic}, {64, Automatic}},
+FrontEndVersion->"12.0 for Mac OS X x86 (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 1394, 38, 114, "Input",ExpressionUUID->"eea68b5d-5a2d-41ce-8559-9ce0b378cf88"],
+Cell[1955, 60, 1141, 31, 50, "Input",ExpressionUUID->"18e345db-23e3-4d35-8844-d80387675e30"],
+Cell[3099, 93, 544, 14, 30, "Input",ExpressionUUID->"7441e592-f153-44a0-99f9-0f4e5cb621c5"],
+Cell[3646, 109, 287, 7, 30, "Input",ExpressionUUID->"7b1d4959-c55c-4561-8fd5-7d37c2f9a280"],
+Cell[3936, 118, 511, 13, 52, "Input",ExpressionUUID->"4a32ea13-b9e0-4c00-ac5a-343d011a923f"],
+Cell[4450, 133, 901, 22, 30, "Input",ExpressionUUID->"6b5815e7-33de-42de-bf33-934417870559"],
+Cell[5354, 157, 302, 8, 30, "Input",ExpressionUUID->"d307a000-c1d8-46f2-9a17-c8e33ef50231"],
+Cell[5659, 167, 302, 8, 30, "Input",ExpressionUUID->"6379c2af-06a7-427f-9b17-121d9dac66ae"],
+Cell[5964, 177, 278, 8, 30, "Input",ExpressionUUID->"f4cb763f-bea7-4ef2-8043-b3607eddbe69"],
+Cell[6245, 187, 501, 14, 30, "Input",ExpressionUUID->"e5c42464-3826-4447-9048-8ce3591cbe65"],
+Cell[6749, 203, 336, 8, 30, "Input",ExpressionUUID->"97243a23-709a-400b-b0ef-b24756292a38"],
+Cell[7088, 213, 283, 6, 30, "Input",ExpressionUUID->"2a35fc5b-d3d6-4fe5-873c-0b31179484fe"],
+Cell[7374, 221, 226, 5, 30, "Input",ExpressionUUID->"fbd0cbbe-4062-4d36-8324-f449d491b3d2"],
+Cell[7603, 228, 1123, 29, 50, "Input",ExpressionUUID->"e357d4c5-f1de-42f0-9691-aedcc9ef739c"],
+Cell[8729, 259, 348, 10, 30, "Input",ExpressionUUID->"e5f49825-0016-4488-8840-08b625562984"],
+Cell[9080, 271, 493, 13, 30, "Input",ExpressionUUID->"bb0a1ab8-7b30-4cee-b86d-6703665a1ed0"],
+Cell[9576, 286, 287, 7, 30, "Input",ExpressionUUID->"f619c693-4863-42eb-8aa6-402754928a06"],
+Cell[9866, 295, 285, 7, 30, "Input",ExpressionUUID->"4f2841c5-a01d-4e23-b402-70995aa1ee9d"],
+Cell[10154, 304, 762, 20, 52, "Input",ExpressionUUID->"8c62787e-f973-40d4-8c7a-edcf281976d4"],
+Cell[10919, 326, 327, 8, 30, "Input",ExpressionUUID->"d45c9629-0d87-4fd9-9b42-b28e4f9a572d"],
+Cell[11249, 336, 327, 8, 30, "Input",ExpressionUUID->"5f63d4dd-d859-4e9c-90be-5c1cf56b91be"],
+Cell[11579, 346, 329, 8, 30, "Input",ExpressionUUID->"1ae716b2-781b-46b8-b0bd-471453f01444"],
+Cell[11911, 356, 626, 15, 30, "Input",ExpressionUUID->"15ed2d3d-d0e7-4e83-a2f0-fdad7e686899"],
+Cell[12540, 373, 237, 5, 30, "Input",ExpressionUUID->"db4970fe-b492-4f64-859b-9a4826a1d4f7"],
+Cell[12780, 380, 579, 13, 52, "Input",ExpressionUUID->"582e3eab-b923-473f-9d15-25a305c53ca0"],
+Cell[13362, 395, 72417, 1644, 1938, "Input",ExpressionUUID->"2830880d-2d3d-4b13-8210-e33623ece2d6"],
+Cell[85782, 2041, 31616, 522, 437, "Input",ExpressionUUID->"f828a5e3-e613-4f5f-a84f-c3bcc570fe15"]
+}
+]
+*)
+
